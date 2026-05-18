@@ -34,7 +34,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(83, 125);
+            this.btnStart.Location = new System.Drawing.Point(82, 125);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(109, 41);
             this.btnStart.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(88, 82);
+            this.lblWelcome.Location = new System.Drawing.Point(87, 82);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(102, 20);
             this.lblWelcome.TabIndex = 1;

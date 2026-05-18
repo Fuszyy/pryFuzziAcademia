@@ -39,12 +39,15 @@
             this.btnList = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
+            this.tstDateShow = new System.Windows.Forms.ToolStrip();
+            this.lblLoginDateShow = new System.Windows.Forms.ToolStripLabel();
+            this.tstDateShow.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCode
             // 
             this.lblCode.AutoSize = true;
-            this.lblCode.Location = new System.Drawing.Point(22, 30);
+            this.lblCode.Location = new System.Drawing.Point(22, 35);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(40, 13);
             this.lblCode.TabIndex = 0;
@@ -53,7 +56,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(22, 61);
+            this.lblName.Location = new System.Drawing.Point(22, 66);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(44, 13);
             this.lblName.TabIndex = 1;
@@ -63,7 +66,7 @@
             // lblPlan
             // 
             this.lblPlan.AutoSize = true;
-            this.lblPlan.Location = new System.Drawing.Point(22, 95);
+            this.lblPlan.Location = new System.Drawing.Point(22, 100);
             this.lblPlan.Name = "lblPlan";
             this.lblPlan.Size = new System.Drawing.Size(28, 13);
             this.lblPlan.TabIndex = 2;
@@ -72,7 +75,7 @@
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(73, 27);
+            this.txtCode.Location = new System.Drawing.Point(73, 32);
             this.txtCode.Mask = "00000";
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(39, 20);
@@ -80,7 +83,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(73, 58);
+            this.txtName.Location = new System.Drawing.Point(73, 63);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(124, 20);
             this.txtName.TabIndex = 4;
@@ -94,7 +97,7 @@
             "A",
             "B",
             "C"});
-            this.cbxPlan.Location = new System.Drawing.Point(73, 92);
+            this.cbxPlan.Location = new System.Drawing.Point(73, 97);
             this.cbxPlan.Name = "cbxPlan";
             this.cbxPlan.Size = new System.Drawing.Size(124, 21);
             this.cbxPlan.TabIndex = 5;
@@ -148,11 +151,29 @@
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
+            // tstDateShow
+            // 
+            this.tstDateShow.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblLoginDateShow});
+            this.tstDateShow.Location = new System.Drawing.Point(0, 0);
+            this.tstDateShow.Name = "tstDateShow";
+            this.tstDateShow.Size = new System.Drawing.Size(271, 25);
+            this.tstDateShow.TabIndex = 11;
+            this.tstDateShow.Text = "toolStrip1";
+            this.tstDateShow.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
+            // 
+            // lblLoginDateShow
+            // 
+            this.lblLoginDateShow.Name = "lblLoginDateShow";
+            this.lblLoginDateShow.Size = new System.Drawing.Size(12, 22);
+            this.lblLoginDateShow.Text = "-";
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 199);
+            this.ClientSize = new System.Drawing.Size(271, 204);
+            this.Controls.Add(this.tstDateShow);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnList);
@@ -167,6 +188,9 @@
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Asignatura";
+            this.Load += new System.EventHandler(this.frmRegistro_Load);
+            this.tstDateShow.ResumeLayout(false);
+            this.tstDateShow.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +209,7 @@
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAccept;
+        private System.Windows.Forms.ToolStrip tstDateShow;
+        private System.Windows.Forms.ToolStripLabel lblLoginDateShow;
     }
 }

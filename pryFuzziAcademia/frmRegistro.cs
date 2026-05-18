@@ -12,10 +12,18 @@ namespace pryFuzziAcademia
 {
     public partial class frmRegistro : Form
     {
+
+        public DateTime varLoginDate;
+        int varCode;
+        string varName;
+        string varPlan;
+        bool varActive;
+
         public frmRegistro()
         {
             InitializeComponent();
         }
+
 
         private void lblPlan_Click(object sender, EventArgs e)
         {
@@ -58,6 +66,16 @@ namespace pryFuzziAcademia
             {
                 MessageBox.Show("Completar los datos.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            lblLoginDateShow.Text = varLoginDate.ToString();
+        }
+
+        private void frmRegistro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

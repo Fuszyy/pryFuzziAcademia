@@ -21,6 +21,7 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmRegistro ventanaRegistro = new frmRegistro();
+            ventanaRegistro.varLoginDate = DateTime.Now;
             ventanaRegistro.ShowDialog();
         }
     }
