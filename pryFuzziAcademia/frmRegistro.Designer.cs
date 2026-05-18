@@ -44,7 +44,7 @@
             // lblCode
             // 
             this.lblCode.AutoSize = true;
-            this.lblCode.Location = new System.Drawing.Point(20, 30);
+            this.lblCode.Location = new System.Drawing.Point(22, 30);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(40, 13);
             this.lblCode.TabIndex = 0;
@@ -53,7 +53,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(20, 62);
+            this.lblName.Location = new System.Drawing.Point(22, 61);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(44, 13);
             this.lblName.TabIndex = 1;
@@ -63,7 +63,7 @@
             // lblPlan
             // 
             this.lblPlan.AutoSize = true;
-            this.lblPlan.Location = new System.Drawing.Point(20, 95);
+            this.lblPlan.Location = new System.Drawing.Point(22, 95);
             this.lblPlan.Name = "lblPlan";
             this.lblPlan.Size = new System.Drawing.Size(28, 13);
             this.lblPlan.TabIndex = 2;
@@ -72,17 +72,17 @@
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(70, 27);
+            this.txtCode.Location = new System.Drawing.Point(73, 27);
             this.txtCode.Mask = "00000";
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(36, 20);
+            this.txtCode.Size = new System.Drawing.Size(39, 20);
             this.txtCode.TabIndex = 3;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(70, 59);
+            this.txtName.Location = new System.Drawing.Point(73, 58);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(110, 20);
+            this.txtName.Size = new System.Drawing.Size(124, 20);
             this.txtName.TabIndex = 4;
             this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -94,16 +94,16 @@
             "A",
             "B",
             "C"});
-            this.cbxPlan.Location = new System.Drawing.Point(70, 92);
+            this.cbxPlan.Location = new System.Drawing.Point(73, 92);
             this.cbxPlan.Name = "cbxPlan";
-            this.cbxPlan.Size = new System.Drawing.Size(110, 21);
+            this.cbxPlan.Size = new System.Drawing.Size(124, 21);
             this.cbxPlan.TabIndex = 5;
             this.cbxPlan.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblActive
             // 
             this.lblActive.AutoSize = true;
-            this.lblActive.Location = new System.Drawing.Point(20, 138);
+            this.lblActive.Location = new System.Drawing.Point(22, 138);
             this.lblActive.Name = "lblActive";
             this.lblActive.Size = new System.Drawing.Size(37, 13);
             this.lblActive.TabIndex = 6;
@@ -112,7 +112,7 @@
             // chkActive
             // 
             this.chkActive.AutoSize = true;
-            this.chkActive.Location = new System.Drawing.Point(70, 138);
+            this.chkActive.Location = new System.Drawing.Point(72, 138);
             this.chkActive.Name = "chkActive";
             this.chkActive.Size = new System.Drawing.Size(15, 14);
             this.chkActive.TabIndex = 7;
@@ -144,7 +144,7 @@
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(75, 23);
             this.btnAccept.TabIndex = 10;
-            this.btnAccept.Text = "Aceptar";
+            this.btnAccept.Text = "Registrar";
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 

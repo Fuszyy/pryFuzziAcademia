@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.gbxSearch = new System.Windows.Forms.GroupBox();
-            this.rbtAllSearch = new System.Windows.Forms.RadioButton();
-            this.rbtCodeSearch = new System.Windows.Forms.RadioButton();
-            this.rbtNameSearch = new System.Windows.Forms.RadioButton();
-            this.rbtPlanSearch = new System.Windows.Forms.RadioButton();
-            this.txtCodeSearch = new System.Windows.Forms.MaskedTextBox();
-            this.txtNameSearch = new System.Windows.Forms.TextBox();
             this.cbxPlanSearch = new System.Windows.Forms.ComboBox();
+            this.txtNameSearch = new System.Windows.Forms.TextBox();
+            this.txtCodeSearch = new System.Windows.Forms.MaskedTextBox();
+            this.rbtPlanSearch = new System.Windows.Forms.RadioButton();
+            this.rbtNameSearch = new System.Windows.Forms.RadioButton();
+            this.rbtCodeSearch = new System.Windows.Forms.RadioButton();
+            this.rbtAllSearch = new System.Windows.Forms.RadioButton();
             this.gbxSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,38 +56,28 @@
             this.gbxSearch.Text = "Buscar";
             this.gbxSearch.Enter += new System.EventHandler(this.gbxSearch_Enter);
             // 
-            // rbtAllSearch
+            // cbxPlanSearch
             // 
-            this.rbtAllSearch.AutoSize = true;
-            this.rbtAllSearch.Location = new System.Drawing.Point(6, 23);
-            this.rbtAllSearch.Name = "rbtAllSearch";
-            this.rbtAllSearch.Size = new System.Drawing.Size(50, 17);
-            this.rbtAllSearch.TabIndex = 0;
-            this.rbtAllSearch.TabStop = true;
-            this.rbtAllSearch.Text = "Todo";
-            this.rbtAllSearch.UseVisualStyleBackColor = true;
+            this.cbxPlanSearch.FormattingEnabled = true;
+            this.cbxPlanSearch.Location = new System.Drawing.Point(71, 93);
+            this.cbxPlanSearch.Name = "cbxPlanSearch";
+            this.cbxPlanSearch.Size = new System.Drawing.Size(96, 21);
+            this.cbxPlanSearch.TabIndex = 6;
             // 
-            // rbtCodeSearch
+            // txtNameSearch
             // 
-            this.rbtCodeSearch.AutoSize = true;
-            this.rbtCodeSearch.Location = new System.Drawing.Point(6, 45);
-            this.rbtCodeSearch.Name = "rbtCodeSearch";
-            this.rbtCodeSearch.Size = new System.Drawing.Size(58, 17);
-            this.rbtCodeSearch.TabIndex = 1;
-            this.rbtCodeSearch.TabStop = true;
-            this.rbtCodeSearch.Text = "Código";
-            this.rbtCodeSearch.UseVisualStyleBackColor = true;
+            this.txtNameSearch.Location = new System.Drawing.Point(71, 68);
+            this.txtNameSearch.Name = "txtNameSearch";
+            this.txtNameSearch.Size = new System.Drawing.Size(96, 20);
+            this.txtNameSearch.TabIndex = 5;
             // 
-            // rbtNameSearch
+            // txtCodeSearch
             // 
-            this.rbtNameSearch.AutoSize = true;
-            this.rbtNameSearch.Location = new System.Drawing.Point(6, 69);
-            this.rbtNameSearch.Name = "rbtNameSearch";
-            this.rbtNameSearch.Size = new System.Drawing.Size(62, 17);
-            this.rbtNameSearch.TabIndex = 2;
-            this.rbtNameSearch.TabStop = true;
-            this.rbtNameSearch.Text = "Nombre";
-            this.rbtNameSearch.UseVisualStyleBackColor = true;
+            this.txtCodeSearch.Location = new System.Drawing.Point(71, 44);
+            this.txtCodeSearch.Mask = "00000";
+            this.txtCodeSearch.Name = "txtCodeSearch";
+            this.txtCodeSearch.Size = new System.Drawing.Size(36, 20);
+            this.txtCodeSearch.TabIndex = 4;
             // 
             // rbtPlanSearch
             // 
@@ -100,28 +90,38 @@
             this.rbtPlanSearch.Text = "Plan";
             this.rbtPlanSearch.UseVisualStyleBackColor = true;
             // 
-            // txtCodeSearch
+            // rbtNameSearch
             // 
-            this.txtCodeSearch.Location = new System.Drawing.Point(70, 44);
-            this.txtCodeSearch.Mask = "00000";
-            this.txtCodeSearch.Name = "txtCodeSearch";
-            this.txtCodeSearch.Size = new System.Drawing.Size(36, 20);
-            this.txtCodeSearch.TabIndex = 4;
+            this.rbtNameSearch.AutoSize = true;
+            this.rbtNameSearch.Location = new System.Drawing.Point(6, 69);
+            this.rbtNameSearch.Name = "rbtNameSearch";
+            this.rbtNameSearch.Size = new System.Drawing.Size(62, 17);
+            this.rbtNameSearch.TabIndex = 2;
+            this.rbtNameSearch.TabStop = true;
+            this.rbtNameSearch.Text = "Nombre";
+            this.rbtNameSearch.UseVisualStyleBackColor = true;
             // 
-            // txtNameSearch
+            // rbtCodeSearch
             // 
-            this.txtNameSearch.Location = new System.Drawing.Point(70, 68);
-            this.txtNameSearch.Name = "txtNameSearch";
-            this.txtNameSearch.Size = new System.Drawing.Size(96, 20);
-            this.txtNameSearch.TabIndex = 5;
+            this.rbtCodeSearch.AutoSize = true;
+            this.rbtCodeSearch.Location = new System.Drawing.Point(6, 45);
+            this.rbtCodeSearch.Name = "rbtCodeSearch";
+            this.rbtCodeSearch.Size = new System.Drawing.Size(58, 17);
+            this.rbtCodeSearch.TabIndex = 1;
+            this.rbtCodeSearch.TabStop = true;
+            this.rbtCodeSearch.Text = "Código";
+            this.rbtCodeSearch.UseVisualStyleBackColor = true;
             // 
-            // cbxPlanSearch
+            // rbtAllSearch
             // 
-            this.cbxPlanSearch.FormattingEnabled = true;
-            this.cbxPlanSearch.Location = new System.Drawing.Point(70, 93);
-            this.cbxPlanSearch.Name = "cbxPlanSearch";
-            this.cbxPlanSearch.Size = new System.Drawing.Size(96, 21);
-            this.cbxPlanSearch.TabIndex = 6;
+            this.rbtAllSearch.AutoSize = true;
+            this.rbtAllSearch.Location = new System.Drawing.Point(6, 23);
+            this.rbtAllSearch.Name = "rbtAllSearch";
+            this.rbtAllSearch.Size = new System.Drawing.Size(50, 17);
+            this.rbtAllSearch.TabIndex = 0;
+            this.rbtAllSearch.TabStop = true;
+            this.rbtAllSearch.Text = "Todo";
+            this.rbtAllSearch.UseVisualStyleBackColor = true;
             // 
             // frmListado
             // 
