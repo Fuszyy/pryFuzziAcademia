@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace pryFuzziAcademia
 {
@@ -58,8 +59,13 @@ namespace pryFuzziAcademia
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            if(txtCode.Text != "" && txtCode.MaskCompleted && txtName.Text != "" && cbxPlan.SelectedItem != null)
+            if (txtCode.Text != "" && txtCode.MaskCompleted && txtName.Text != "" && cbxPlan.SelectedItem != null)
             {
+                varCode = int.Parse(txtCode.Text);
+                varName = txtName.Text;
+                varPlan = cbxPlan.SelectedItem.ToString();
+                if (chkActive.Checked) { varActive = true; }
+                else { varActive = false; }
                 MessageBox.Show("Registro exitoso.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
