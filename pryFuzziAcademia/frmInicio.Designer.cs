@@ -34,18 +34,19 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(125, 125);
+            this.btnStart.Location = new System.Drawing.Point(83, 125);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(109, 41);
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Iniciar";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(130, 82);
+            this.lblWelcome.Location = new System.Drawing.Point(88, 82);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(102, 20);
             this.lblWelcome.TabIndex = 1;
@@ -55,10 +56,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 209);
+            this.ClientSize = new System.Drawing.Size(280, 209);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnStart);
             this.Name = "frmInicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido";
             this.ResumeLayout(false);
             this.PerformLayout();

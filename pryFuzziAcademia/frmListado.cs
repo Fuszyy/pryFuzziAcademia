@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace pryFuzziAcademia
 {
-    public partial class frmInicio : Form
+    public partial class frmListado : Form
     {
-        public frmInicio()
+        public frmListado()
         {
             InitializeComponent();
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void gbxSearch_Enter(object sender, EventArgs e)
         {
-            this.Hide();
-            frmRegistro ventanaRegistro = new frmRegistro();
-            ventanaRegistro.ShowDialog();
+
         }
     }
 }

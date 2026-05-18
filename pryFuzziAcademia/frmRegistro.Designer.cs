@@ -28,19 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblCode = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblPlan = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.MaskedTextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.cbxPlan = new System.Windows.Forms.ComboBox();
+            this.lblActive = new System.Windows.Forms.Label();
+            this.chkActive = new System.Windows.Forms.CheckBox();
+            this.btnList = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnAccept = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lblCode
+            // 
+            this.lblCode.AutoSize = true;
+            this.lblCode.Location = new System.Drawing.Point(20, 30);
+            this.lblCode.Name = "lblCode";
+            this.lblCode.Size = new System.Drawing.Size(40, 13);
+            this.lblCode.TabIndex = 0;
+            this.lblCode.Text = "Código";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(20, 62);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(44, 13);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Nombre";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
+            // 
+            // lblPlan
+            // 
+            this.lblPlan.AutoSize = true;
+            this.lblPlan.Location = new System.Drawing.Point(20, 95);
+            this.lblPlan.Name = "lblPlan";
+            this.lblPlan.Size = new System.Drawing.Size(28, 13);
+            this.lblPlan.TabIndex = 2;
+            this.lblPlan.Text = "Plan";
+            this.lblPlan.Click += new System.EventHandler(this.lblPlan_Click);
+            // 
+            // txtCode
+            // 
+            this.txtCode.Location = new System.Drawing.Point(70, 27);
+            this.txtCode.Mask = "00000";
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(36, 20);
+            this.txtCode.TabIndex = 3;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(70, 59);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(110, 20);
+            this.txtName.TabIndex = 4;
+            this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // cbxPlan
+            // 
+            this.cbxPlan.FormattingEnabled = true;
+            this.cbxPlan.Location = new System.Drawing.Point(70, 92);
+            this.cbxPlan.Name = "cbxPlan";
+            this.cbxPlan.Size = new System.Drawing.Size(110, 21);
+            this.cbxPlan.TabIndex = 5;
+            this.cbxPlan.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // lblActive
+            // 
+            this.lblActive.AutoSize = true;
+            this.lblActive.Location = new System.Drawing.Point(20, 140);
+            this.lblActive.Name = "lblActive";
+            this.lblActive.Size = new System.Drawing.Size(37, 13);
+            this.lblActive.TabIndex = 6;
+            this.lblActive.Text = "Activo";
+            // 
+            // chkActive
+            // 
+            this.chkActive.AutoSize = true;
+            this.chkActive.Location = new System.Drawing.Point(70, 140);
+            this.chkActive.Name = "chkActive";
+            this.chkActive.Size = new System.Drawing.Size(15, 14);
+            this.chkActive.TabIndex = 7;
+            this.chkActive.UseVisualStyleBackColor = true;
+            this.chkActive.CheckedChanged += new System.EventHandler(this.chkActive_CheckedChanged);
+            // 
+            // btnList
+            // 
+            this.btnList.Location = new System.Drawing.Point(26, 184);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(75, 23);
+            this.btnList.TabIndex = 8;
+            this.btnList.Text = "Listado";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(107, 184);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnAccept
+            // 
+            this.btnAccept.Location = new System.Drawing.Point(188, 184);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(75, 23);
+            this.btnAccept.TabIndex = 10;
+            this.btnAccept.Text = "Aceptar";
+            this.btnAccept.UseVisualStyleBackColor = true;
             // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 450);
+            this.ClientSize = new System.Drawing.Size(271, 212);
+            this.Controls.Add(this.btnAccept);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnList);
+            this.Controls.Add(this.chkActive);
+            this.Controls.Add(this.lblActive);
+            this.Controls.Add(this.cbxPlan);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtCode);
+            this.Controls.Add(this.lblPlan);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblCode);
             this.Name = "frmRegistro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Asignatura";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblCode;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblPlan;
+        private System.Windows.Forms.MaskedTextBox txtCode;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.ComboBox cbxPlan;
+        private System.Windows.Forms.Label lblActive;
+        private System.Windows.Forms.CheckBox chkActive;
+        private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnAccept;
     }
 }
