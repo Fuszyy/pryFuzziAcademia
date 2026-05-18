@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 209);
+            this.ClientSize = new System.Drawing.Size(273, 200);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnStart);
             this.Name = "frmInicio";

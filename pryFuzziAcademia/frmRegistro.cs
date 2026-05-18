@@ -47,5 +47,17 @@ namespace pryFuzziAcademia
             frmListado ventanaListado = new frmListado();
             ventanaListado.ShowDialog();
         }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            if(txtCode.Text != "" && txtCode.MaskCompleted && txtName.Text != "" && cbxPlan.SelectedItem != null)
+            {
+                MessageBox.Show("Registro exitoso.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Completar los datos.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

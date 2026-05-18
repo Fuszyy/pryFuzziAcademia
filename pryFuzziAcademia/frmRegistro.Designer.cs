@@ -88,7 +88,12 @@
             // 
             // cbxPlan
             // 
+            this.cbxPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPlan.FormattingEnabled = true;
+            this.cbxPlan.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
             this.cbxPlan.Location = new System.Drawing.Point(70, 92);
             this.cbxPlan.Name = "cbxPlan";
             this.cbxPlan.Size = new System.Drawing.Size(110, 21);
@@ -98,7 +103,7 @@
             // lblActive
             // 
             this.lblActive.AutoSize = true;
-            this.lblActive.Location = new System.Drawing.Point(20, 140);
+            this.lblActive.Location = new System.Drawing.Point(20, 138);
             this.lblActive.Name = "lblActive";
             this.lblActive.Size = new System.Drawing.Size(37, 13);
             this.lblActive.TabIndex = 6;
@@ -107,7 +112,7 @@
             // chkActive
             // 
             this.chkActive.AutoSize = true;
-            this.chkActive.Location = new System.Drawing.Point(70, 140);
+            this.chkActive.Location = new System.Drawing.Point(70, 138);
             this.chkActive.Name = "chkActive";
             this.chkActive.Size = new System.Drawing.Size(15, 14);
             this.chkActive.TabIndex = 7;
@@ -116,7 +121,7 @@
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(26, 184);
+            this.btnList.Location = new System.Drawing.Point(26, 172);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(75, 23);
             this.btnList.TabIndex = 8;
@@ -126,7 +131,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(107, 184);
+            this.btnCancel.Location = new System.Drawing.Point(107, 172);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
@@ -135,18 +140,19 @@
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(188, 184);
+            this.btnAccept.Location = new System.Drawing.Point(188, 172);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(75, 23);
             this.btnAccept.TabIndex = 10;
             this.btnAccept.Text = "Aceptar";
             this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 212);
+            this.ClientSize = new System.Drawing.Size(271, 199);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnList);
