@@ -67,6 +67,9 @@ namespace pryFuzziAcademia
                 if (chkActive.Checked) { varActive = true; }
                 else { varActive = false; }
                 MessageBox.Show("Registro exitoso.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtCode.Text = string.Empty;
+                txtName.Text = string.Empty;
+                cbxPlan.SelectedItem = null;
             }
             else
             {
@@ -80,6 +83,18 @@ namespace pryFuzziAcademia
         }
 
         private void frmRegistro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtCode.Text = string.Empty;
+            txtName.Text = string.Empty;
+            cbxPlan.SelectedItem = null;
+        }
+
+        private void btnPlanLoad_Click(object sender, EventArgs e)
         {
 
         }

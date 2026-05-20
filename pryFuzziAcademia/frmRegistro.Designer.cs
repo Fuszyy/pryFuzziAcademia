@@ -41,6 +41,7 @@
             this.btnAccept = new System.Windows.Forms.Button();
             this.tstDateShow = new System.Windows.Forms.ToolStrip();
             this.lblLoginDateShow = new System.Windows.Forms.ToolStripLabel();
+            this.btnPlanLoad = new System.Windows.Forms.Button();
             this.tstDateShow.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +141,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAccept
             // 
@@ -159,20 +161,29 @@
             this.tstDateShow.Name = "tstDateShow";
             this.tstDateShow.Size = new System.Drawing.Size(271, 25);
             this.tstDateShow.TabIndex = 11;
-            this.tstDateShow.Text = "toolStrip1";
             this.tstDateShow.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // lblLoginDateShow
             // 
             this.lblLoginDateShow.Name = "lblLoginDateShow";
-            this.lblLoginDateShow.Size = new System.Drawing.Size(12, 22);
-            this.lblLoginDateShow.Text = "-";
+            this.lblLoginDateShow.Size = new System.Drawing.Size(0, 22);
+            // 
+            // btnPlanLoad
+            // 
+            this.btnPlanLoad.Location = new System.Drawing.Point(107, 143);
+            this.btnPlanLoad.Name = "btnPlanLoad";
+            this.btnPlanLoad.Size = new System.Drawing.Size(156, 23);
+            this.btnPlanLoad.TabIndex = 12;
+            this.btnPlanLoad.Text = "Cargar Plan...";
+            this.btnPlanLoad.UseVisualStyleBackColor = true;
+            this.btnPlanLoad.Click += new System.EventHandler(this.btnPlanLoad_Click);
             // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(271, 204);
+            this.Controls.Add(this.btnPlanLoad);
             this.Controls.Add(this.tstDateShow);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
@@ -211,5 +222,6 @@
         private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.ToolStrip tstDateShow;
         private System.Windows.Forms.ToolStripLabel lblLoginDateShow;
+        private System.Windows.Forms.Button btnPlanLoad;
     }
 }
