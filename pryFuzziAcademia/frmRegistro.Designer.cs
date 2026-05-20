@@ -94,10 +94,6 @@
             // 
             this.cbxPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPlan.FormattingEnabled = true;
-            this.cbxPlan.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C"});
             this.cbxPlan.Location = new System.Drawing.Point(73, 97);
             this.cbxPlan.Name = "cbxPlan";
             this.cbxPlan.Size = new System.Drawing.Size(124, 21);
@@ -174,7 +170,7 @@
             this.btnPlanLoad.Name = "btnPlanLoad";
             this.btnPlanLoad.Size = new System.Drawing.Size(156, 23);
             this.btnPlanLoad.TabIndex = 12;
-            this.btnPlanLoad.Text = "Cargar Plan...";
+            this.btnPlanLoad.Text = "Cargar Plan de Estudio...";
             this.btnPlanLoad.UseVisualStyleBackColor = true;
             this.btnPlanLoad.Click += new System.EventHandler(this.btnPlanLoad_Click);
             // 

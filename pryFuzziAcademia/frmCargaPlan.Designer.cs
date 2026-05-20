@@ -32,6 +32,7 @@
             this.btnLoadPlan = new System.Windows.Forms.Button();
             this.txtPlanName = new System.Windows.Forms.TextBox();
             this.lblPlanName = new System.Windows.Forms.Label();
+            this.btnPlanList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCancelPlan
@@ -42,6 +43,7 @@
             this.btnCancelPlan.TabIndex = 0;
             this.btnCancelPlan.Text = "Cancelar";
             this.btnCancelPlan.UseVisualStyleBackColor = true;
+            this.btnCancelPlan.Click += new System.EventHandler(this.btnCancelPlan_Click);
             // 
             // btnLoadPlan
             // 
@@ -55,7 +57,7 @@
             // 
             // txtPlanName
             // 
-            this.txtPlanName.Location = new System.Drawing.Point(92, 43);
+            this.txtPlanName.Location = new System.Drawing.Point(93, 42);
             this.txtPlanName.Name = "txtPlanName";
             this.txtPlanName.Size = new System.Drawing.Size(108, 20);
             this.txtPlanName.TabIndex = 2;
@@ -63,22 +65,33 @@
             // lblPlanName
             // 
             this.lblPlanName.AutoSize = true;
-            this.lblPlanName.Location = new System.Drawing.Point(39, 46);
+            this.lblPlanName.Location = new System.Drawing.Point(40, 45);
             this.lblPlanName.Name = "lblPlanName";
             this.lblPlanName.Size = new System.Drawing.Size(47, 13);
             this.lblPlanName.TabIndex = 3;
             this.lblPlanName.Text = "Nombre:";
+            // 
+            // btnPlanList
+            // 
+            this.btnPlanList.Location = new System.Drawing.Point(5, 85);
+            this.btnPlanList.Name = "btnPlanList";
+            this.btnPlanList.Size = new System.Drawing.Size(75, 23);
+            this.btnPlanList.TabIndex = 4;
+            this.btnPlanList.Text = "Listar";
+            this.btnPlanList.UseVisualStyleBackColor = true;
             // 
             // frmCargaPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(254, 117);
+            this.Controls.Add(this.btnPlanList);
             this.Controls.Add(this.lblPlanName);
             this.Controls.Add(this.txtPlanName);
             this.Controls.Add(this.btnLoadPlan);
             this.Controls.Add(this.btnCancelPlan);
             this.Name = "frmCargaPlan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cargar Plan de Estudio";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -91,5 +104,6 @@
         private System.Windows.Forms.Button btnLoadPlan;
         private System.Windows.Forms.TextBox txtPlanName;
         private System.Windows.Forms.Label lblPlanName;
+        private System.Windows.Forms.Button btnPlanList;
     }
 }

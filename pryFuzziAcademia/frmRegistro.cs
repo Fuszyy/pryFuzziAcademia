@@ -96,7 +96,8 @@ namespace pryFuzziAcademia
 
         private void btnPlanLoad_Click(object sender, EventArgs e)
         {
-
+            frmCargaPlan ventanaCargaPlan = new frmCargaPlan();
+            ventanaCargaPlan.ShowDialog();
         }
     }
 }

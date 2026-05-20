@@ -25,11 +25,21 @@ namespace pryFuzziAcademia
             {
                 ArrPlans[varCounter] = txtPlanName.Text;
                 varCounter++;
+                txtPlanName.Text = string.Empty;
+                MessageBox.Show("Plan de estudio añadido con éxito.", "Planes de estudio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 if (varCounter == 5)
                 {
-                    MessageBox.Show("Cantidad de planes ")
+                    MessageBox.Show("Límite de cantidad de planes alcanzado.", "Planes de estudio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtPlanName.Enabled = false;
+                    
                 }
             }
+        }
+
+        private void btnCancelPlan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
