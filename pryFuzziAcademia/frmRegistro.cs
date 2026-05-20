@@ -15,10 +15,8 @@ namespace pryFuzziAcademia
     {
 
         public DateTime varLoginDate;
-        int varCode;
-        string varName;
-        string varPlan;
-        bool varActive;
+        string[,] arrMaterias = new string[3, 5];
+        int varRowCount = 0;
 
         public frmRegistro()
         {
@@ -38,9 +36,8 @@ namespace pryFuzziAcademia
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            cbxPlan.Enabled = true;
         }
-
         private void lblName_Click(object sender, EventArgs e)
         {
 
@@ -61,15 +58,22 @@ namespace pryFuzziAcademia
         {
             if (txtCode.Text != "" && txtCode.MaskCompleted && txtName.Text != "" && cbxPlan.SelectedItem != null)
             {
-                varCode = int.Parse(txtCode.Text);
-                varName = txtName.Text;
-                varPlan = cbxPlan.SelectedItem.ToString();
-                if (chkActive.Checked) { varActive = true; }
-                else { varActive = false; }
+                arrMaterias[0, varRowCount] = txtCode.Text;
+                arrMaterias[1, varRowCount] = txtName.Text;
+                if (chkActive.Checked) { arrMaterias[2, varRowCount] = "Activo"; }
+                else { arrMaterias[2, varRowCount] = "Inactivo"; }
+                varRowCount++;
+                if(varRowCount >= arrMaterias.Length)
+                {
+                    MessageBox.Show("Límite de cantidad de Materias alcanzado.", "Materias", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnAccept.Enabled = false;
+                }
                 MessageBox.Show("Registro exitoso.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtCode.Text = string.Empty;
                 txtName.Text = string.Empty;
                 cbxPlan.SelectedItem = null;
+                txtName.Enabled = false;
+                cbxPlan.Enabled = false;
             }
             else
             {
@@ -92,12 +96,29 @@ namespace pryFuzziAcademia
             txtCode.Text = string.Empty;
             txtName.Text = string.Empty;
             cbxPlan.SelectedItem = null;
+            txtName.Enabled = false;
+            cbxPlan.Enabled = false;
         }
 
         private void btnPlanLoad_Click(object sender, EventArgs e)
         {
             frmCargaPlan ventanaCargaPlan = new frmCargaPlan();
             ventanaCargaPlan.ShowDialog();
+            txtCode.Text = string.Empty;
+            txtName.Text = string.Empty;
+            cbxPlan.SelectedItem = null;
+            txtName.Enabled = false;
+            cbxPlan.Enabled = false;
+        }
+
+        private void txtCode_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void txtCode_TextChanged(object sender, EventArgs e)
+        {
+            txtName.Enabled = true;
         }
     }
 }

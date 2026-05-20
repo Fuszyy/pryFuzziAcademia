@@ -79,11 +79,14 @@
             this.txtCode.Location = new System.Drawing.Point(73, 32);
             this.txtCode.Mask = "00000";
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(39, 20);
+            this.txtCode.Size = new System.Drawing.Size(36, 20);
             this.txtCode.TabIndex = 3;
+            this.txtCode.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCode_MaskInputRejected);
+            this.txtCode.TextChanged += new System.EventHandler(this.txtCode_TextChanged);
             // 
             // txtName
             // 
+            this.txtName.Enabled = false;
             this.txtName.Location = new System.Drawing.Point(73, 63);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(124, 20);
@@ -93,7 +96,10 @@
             // cbxPlan
             // 
             this.cbxPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxPlan.Enabled = false;
             this.cbxPlan.FormattingEnabled = true;
+            this.cbxPlan.Items.AddRange(new object[] {
+            "A"});
             this.cbxPlan.Location = new System.Drawing.Point(73, 97);
             this.cbxPlan.Name = "cbxPlan";
             this.cbxPlan.Size = new System.Drawing.Size(124, 21);

@@ -12,7 +12,7 @@ namespace pryFuzziAcademia
 {
     public partial class frmCargaPlan : Form
     {
-        string[] ArrPlans = new string[5];
+        public string[] ArrPlans = new string[5];
         int varCounter = 0;
         public frmCargaPlan()
         {
