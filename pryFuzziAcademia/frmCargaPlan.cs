@@ -32,7 +32,7 @@ namespace pryFuzziAcademia
                 {
                     MessageBox.Show("Límite de cantidad de planes alcanzado.", "Planes de estudio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPlanName.Enabled = false;
-                    
+                    btnLoadPlan.Enabled = false;   
                 }
             }
         }
@@ -40,6 +40,14 @@ namespace pryFuzziAcademia
         private void btnCancelPlan_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnPlanList_Click(object sender, EventArgs e)
+        {
+            for (int count = 0; count < ArrPlans.Length; count++)
+            {
+                lstPlans.Items.Add(ArrPlans[count]);
+            }
         }
     }
 }
