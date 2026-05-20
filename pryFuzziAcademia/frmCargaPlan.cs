@@ -27,7 +27,7 @@ namespace pryFuzziAcademia
                 varCounter++;
                 if (varCounter == 5)
                 {
-                    mess
+                    MessageBox.Show("Cantidad de planes ")
                 }
             }
         }
