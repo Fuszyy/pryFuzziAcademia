@@ -15,7 +15,7 @@ namespace pryFuzziAcademia
     {
 
         public DateTime varLoginDate;
-        string[,] arrMaterias = new string[3, 5];
+        string[,] arrMaterias = new string[5, 4];
         int varRowCount = 0;
 
         public frmRegistro()
@@ -51,29 +51,38 @@ namespace pryFuzziAcademia
         private void btnList_Click(object sender, EventArgs e)
         {
             frmListado ventanaListado = new frmListado();
+
+            ventanaListado.arrMateriasListado = arrMaterias;            
+            
             ventanaListado.ShowDialog();
+
         }
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
             if (txtCode.Text != "" && txtCode.MaskCompleted && txtName.Text != "" && cbxPlan.SelectedItem != null)
             {
-                arrMaterias[0, varRowCount] = txtCode.Text;
-                arrMaterias[1, varRowCount] = txtName.Text;
-                if (chkActive.Checked) { arrMaterias[2, varRowCount] = "Activo"; }
-                else { arrMaterias[2, varRowCount] = "Inactivo"; }
+                arrMaterias[varRowCount, 0] = txtCode.Text;
+                arrMaterias[varRowCount, 1] = txtName.Text;
+                arrMaterias[varRowCount, 2] = cbxPlan.Text;
+                if (chkActive.Checked) { arrMaterias[varRowCount, 3] = "Activo"; }
+                else { arrMaterias[varRowCount, 3] = "Inactivo"; }
                 varRowCount++;
-                if(varRowCount >= arrMaterias.Length)
-                {
-                    MessageBox.Show("Límite de cantidad de Materias alcanzado.", "Materias", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnAccept.Enabled = false;
-                }
+
                 MessageBox.Show("Registro exitoso.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtCode.Text = string.Empty;
                 txtName.Text = string.Empty;
                 cbxPlan.SelectedItem = null;
                 txtName.Enabled = false;
                 cbxPlan.Enabled = false;
+                chkActive.Checked = false;
+
+                if (varRowCount >= arrMaterias.GetLength(0))
+                {
+                    MessageBox.Show("Límite de cantidad de Materias alcanzado.", "Materias", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnAccept.Enabled = false;
+                }
+                
             }
             else
             {
@@ -98,6 +107,7 @@ namespace pryFuzziAcademia
             cbxPlan.SelectedItem = null;
             txtName.Enabled = false;
             cbxPlan.Enabled = false;
+            chkActive.Checked = false; 
         }
 
         private void btnPlanLoad_Click(object sender, EventArgs e)

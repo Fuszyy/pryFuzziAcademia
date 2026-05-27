@@ -12,12 +12,29 @@ namespace pryFuzziAcademia
 {
     public partial class frmListado : Form
     {
+        public string[,] arrMateriasListado = new string[4, 5];
         public frmListado()
         {
             InitializeComponent();
         }
 
         private void gbxSearch_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (rbtAllSearch.Checked)
+            {
+                for (int row = 0;row < arrMateriasListado.GetLength(0); row++)
+                {
+                    dgvGrilla.Rows.Add(arrMateriasListado[row, 0], arrMateriasListado[row, 1], arrMateriasListado[row, 2], arrMateriasListado[row, 3]);
+                }
+            }
+        }
+
+        private void frmListado_Load(object sender, EventArgs e)
         {
 
         }

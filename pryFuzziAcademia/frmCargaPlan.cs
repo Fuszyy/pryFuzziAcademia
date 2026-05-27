@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,7 @@ namespace pryFuzziAcademia
                 {
                     MessageBox.Show("Límite de cantidad de planes alcanzado.", "Planes de estudio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPlanName.Enabled = false;
-                    btnLoadPlan.Enabled = false;   
+                    btnLoadPlan.Enabled = false;
                 }
             }
         }
@@ -44,9 +45,17 @@ namespace pryFuzziAcademia
 
         private void btnPlanList_Click(object sender, EventArgs e)
         {
-            for (int count = 0; count < ArrPlans.Length; count++)
+            for (int count = 0; count < 5; count++)
             {
-                lstPlans.Items.Add(ArrPlans[count]);
+                if (ArrPlans[count] == null)
+                {
+                    ArrPlans[count] = "";
+                    lstPlans.Items.Add(ArrPlans[count]);
+                }
+                else
+                {
+                    lstPlans.Items.Add(ArrPlans[count]);
+                }
             }
         }
     }

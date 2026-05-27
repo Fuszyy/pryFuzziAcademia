@@ -36,7 +36,14 @@
             this.rbtNameSearch = new System.Windows.Forms.RadioButton();
             this.rbtCodeSearch = new System.Windows.Forms.RadioButton();
             this.rbtAllSearch = new System.Windows.Forms.RadioButton();
+            this.btnListSearch = new System.Windows.Forms.Button();
+            this.dgvGrilla = new System.Windows.Forms.DataGridView();
+            this.clmCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmSubj = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmActive = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbxSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxSearch
@@ -123,17 +130,64 @@
             this.rbtAllSearch.Text = "Todo";
             this.rbtAllSearch.UseVisualStyleBackColor = true;
             // 
+            // btnListSearch
+            // 
+            this.btnListSearch.Location = new System.Drawing.Point(137, 139);
+            this.btnListSearch.Name = "btnListSearch";
+            this.btnListSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnListSearch.TabIndex = 1;
+            this.btnListSearch.Text = "Buscar";
+            this.btnListSearch.UseVisualStyleBackColor = true;
+            this.btnListSearch.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dgvGrilla
+            // 
+            this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrilla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmCode,
+            this.clmName,
+            this.clmSubj,
+            this.clmActive});
+            this.dgvGrilla.Location = new System.Drawing.Point(218, 6);
+            this.dgvGrilla.Name = "dgvGrilla";
+            this.dgvGrilla.Size = new System.Drawing.Size(443, 156);
+            this.dgvGrilla.TabIndex = 2;
+            // 
+            // clmCode
+            // 
+            this.clmCode.HeaderText = "Código";
+            this.clmCode.Name = "clmCode";
+            // 
+            // clmName
+            // 
+            this.clmName.HeaderText = "Nombre";
+            this.clmName.Name = "clmName";
+            // 
+            // clmSubj
+            // 
+            this.clmSubj.HeaderText = "Materia";
+            this.clmSubj.Name = "clmSubj";
+            // 
+            // clmActive
+            // 
+            this.clmActive.HeaderText = "Activo";
+            this.clmActive.Name = "clmActive";
+            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(218, 137);
+            this.ClientSize = new System.Drawing.Size(670, 167);
+            this.Controls.Add(this.dgvGrilla);
+            this.Controls.Add(this.btnListSearch);
             this.Controls.Add(this.gbxSearch);
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado";
+            this.Load += new System.EventHandler(this.frmListado_Load);
             this.gbxSearch.ResumeLayout(false);
             this.gbxSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,5 +202,11 @@
         private System.Windows.Forms.RadioButton rbtCodeSearch;
         private System.Windows.Forms.RadioButton rbtAllSearch;
         private System.Windows.Forms.ComboBox cbxPlanSearch;
+        private System.Windows.Forms.Button btnListSearch;
+        private System.Windows.Forms.DataGridView dgvGrilla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmSubj;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmActive;
     }
 }
