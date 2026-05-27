@@ -43,6 +43,8 @@
             this.txtDNI = new System.Windows.Forms.MaskedTextBox();
             this.txtContact = new System.Windows.Forms.MaskedTextBox();
             this.txtBirthDate = new System.Windows.Forms.MaskedTextBox();
+            this.lblTEMP = new System.Windows.Forms.Label();
+            this.lblTEMP2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnList
@@ -81,7 +83,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(269, 18);
+            this.txtAddress.Location = new System.Drawing.Point(271, 18);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(101, 20);
             this.txtAddress.TabIndex = 7;
@@ -123,7 +125,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(211, 21);
+            this.lblAddress.Location = new System.Drawing.Point(214, 21);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(52, 13);
             this.lblAddress.TabIndex = 12;
@@ -132,7 +134,7 @@
             // lblContact
             // 
             this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(213, 55);
+            this.lblContact.Location = new System.Drawing.Point(216, 55);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(50, 13);
             this.lblContact.TabIndex = 13;
@@ -158,7 +160,7 @@
             // 
             // txtContact
             // 
-            this.txtContact.Location = new System.Drawing.Point(269, 52);
+            this.txtContact.Location = new System.Drawing.Point(271, 52);
             this.txtContact.Mask = "(999)000-0000";
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(76, 20);
@@ -173,11 +175,31 @@
             this.txtBirthDate.TabIndex = 17;
             this.txtBirthDate.ValidatingType = typeof(System.DateTime);
             // 
+            // lblTEMP
+            // 
+            this.lblTEMP.AutoSize = true;
+            this.lblTEMP.Location = new System.Drawing.Point(12, 119);
+            this.lblTEMP.Name = "lblTEMP";
+            this.lblTEMP.Size = new System.Drawing.Size(76, 13);
+            this.lblTEMP.TabIndex = 19;
+            this.lblTEMP.Text = "fecha Registro";
+            // 
+            // lblTEMP2
+            // 
+            this.lblTEMP2.AutoSize = true;
+            this.lblTEMP2.Location = new System.Drawing.Point(12, 132);
+            this.lblTEMP2.Name = "lblTEMP2";
+            this.lblTEMP2.Size = new System.Drawing.Size(100, 13);
+            this.lblTEMP2.TabIndex = 18;
+            this.lblTEMP2.Text = "fecha Actualización";
+            // 
             // frmAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 160);
+            this.Controls.Add(this.lblTEMP);
+            this.Controls.Add(this.lblTEMP2);
             this.Controls.Add(this.txtBirthDate);
             this.Controls.Add(this.txtContact);
             this.Controls.Add(this.txtDNI);
@@ -194,7 +216,8 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnList);
             this.Name = "frmAlumno";
-            this.Text = "z";
+            this.Text = "Cargar Alumno";
+            this.Load += new System.EventHandler(this.frmAlumno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +240,7 @@
         private System.Windows.Forms.MaskedTextBox txtDNI;
         private System.Windows.Forms.MaskedTextBox txtContact;
         private System.Windows.Forms.MaskedTextBox txtBirthDate;
+        private System.Windows.Forms.Label lblTEMP;
+        private System.Windows.Forms.Label lblTEMP2;
     }
 }

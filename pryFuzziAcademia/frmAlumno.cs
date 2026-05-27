@@ -21,5 +21,10 @@ namespace pryFuzziAcademia
         {
 
         }
+
+        private void frmAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
