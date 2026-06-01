@@ -152,6 +152,7 @@
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.Size = new System.Drawing.Size(443, 156);
             this.dgvGrilla.TabIndex = 2;
+            this.dgvGrilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellContentClick);
             // 
             // clmCode
             // 

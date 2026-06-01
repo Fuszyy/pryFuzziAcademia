@@ -18,6 +18,9 @@ namespace pryFuzziAcademia
         string[,] arrMaterias = new string[5, 4];
         int varRowCount = 0;
 
+        public string[] arrPlanes = new string[5];
+        
+
         public frmRegistro()
         {
             InitializeComponent();
@@ -37,6 +40,7 @@ namespace pryFuzziAcademia
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             cbxPlan.Enabled = true;
+
         }
         private void lblName_Click(object sender, EventArgs e)
         {
@@ -113,6 +117,7 @@ namespace pryFuzziAcademia
         private void btnPlanLoad_Click(object sender, EventArgs e)
         {
             frmCargaPlan ventanaCargaPlan = new frmCargaPlan();
+            ventanaCargaPlan.ArrPlans = arrPlanes;
             ventanaCargaPlan.ShowDialog();
             txtCode.Text = string.Empty;
             txtName.Text = string.Empty;

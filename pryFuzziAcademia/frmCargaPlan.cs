@@ -36,6 +36,10 @@ namespace pryFuzziAcademia
                     btnLoadPlan.Enabled = false;
                 }
             }
+            else
+            {
+                MessageBox.Show("Completar los datos.", "Carga de Plan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnCancelPlan_Click(object sender, EventArgs e)
@@ -45,18 +49,15 @@ namespace pryFuzziAcademia
 
         private void btnPlanList_Click(object sender, EventArgs e)
         {
-            for (int count = 0; count < 5; count++)
+            lstPlans.Items.Clear();
+            for (int count = 0; count < ArrPlans.Length; count++)
             {
-                if (ArrPlans[count] == null)
+                if (ArrPlans[count] != null)
                 {
-                    ArrPlans[count] = "";
-                    lstPlans.Items.Add(ArrPlans[count]);
-                }
-                else
-                {
-                    lstPlans.Items.Add(ArrPlans[count]);
+                    lstPlans.Items.Add(ArrPlans[count]);                    
                 }
             }
+            
         }
     }
 }

@@ -25,16 +25,25 @@ namespace pryFuzziAcademia
 
         private void button1_Click(object sender, EventArgs e)
         {
+            dgvGrilla.Rows.Clear();
             if (rbtAllSearch.Checked)
             {
                 for (int row = 0;row < arrMateriasListado.GetLength(0); row++)
                 {
-                    dgvGrilla.Rows.Add(arrMateriasListado[row, 0], arrMateriasListado[row, 1], arrMateriasListado[row, 2], arrMateriasListado[row, 3]);
+                    if (arrMateriasListado[row, 0] != null)
+                    {
+                        dgvGrilla.Rows.Add(arrMateriasListado[row, 0], arrMateriasListado[row, 1], arrMateriasListado[row, 2], arrMateriasListado[row, 3]);
+                    }                    
                 }
             }
         }
 
         private void frmListado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvGrilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
