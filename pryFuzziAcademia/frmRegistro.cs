@@ -39,7 +39,7 @@ namespace pryFuzziAcademia
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            cbxPlan.Enabled = true;
+            cbxPlan.Items.Clear();
             for (int count = 0; count < arrPlanes.Length; count++)
             {
                 if (arrPlanes[count] != null)
@@ -47,6 +47,7 @@ namespace pryFuzziAcademia
                     cbxPlan.Items.Add(arrPlanes[count]);
                 }
             }
+            cbxPlan.Enabled = true;
         }
         private void lblName_Click(object sender, EventArgs e)
         {
@@ -122,14 +123,10 @@ namespace pryFuzziAcademia
 
         private void btnPlanLoad_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmCargaPlan ventanaCargaPlan = new frmCargaPlan();
             ventanaCargaPlan.ArrPlans = arrPlanes;
             ventanaCargaPlan.ShowDialog();
-            txtCode.Text = string.Empty;
-            txtName.Text = string.Empty;
-            cbxPlan.SelectedItem = null;
-            txtName.Enabled = false;
-            cbxPlan.Enabled = false;
         }
 
         private void txtCode_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
