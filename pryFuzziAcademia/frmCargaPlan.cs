@@ -5,9 +5,11 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace pryFuzziAcademia
 {
@@ -57,7 +59,12 @@ namespace pryFuzziAcademia
                     lstPlans.Items.Add(ArrPlans[count]);                    
                 }
             }
-            
+           
+            MessageBox.Show("Planes de estudio cargados.", "Carga de Plan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmRegistro ventana2 = new frmRegistro();
+
+            ventana2.arrPlanes = ArrPlans;
+            ventana2.ShowDialog();
         }
     }
 }

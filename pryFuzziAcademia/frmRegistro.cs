@@ -40,7 +40,13 @@ namespace pryFuzziAcademia
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             cbxPlan.Enabled = true;
-
+            for (int count = 0; count < arrPlanes.Length; count++)
+            {
+                if (arrPlanes[count] != null)
+                {
+                    cbxPlan.Items.Add(arrPlanes[count]);
+                }
+            }
         }
         private void lblName_Click(object sender, EventArgs e)
         {

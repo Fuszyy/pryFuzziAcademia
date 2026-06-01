@@ -98,8 +98,6 @@
             this.cbxPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPlan.Enabled = false;
             this.cbxPlan.FormattingEnabled = true;
-            this.cbxPlan.Items.AddRange(new object[] {
-            "A"});
             this.cbxPlan.Location = new System.Drawing.Point(73, 97);
             this.cbxPlan.Name = "cbxPlan";
             this.cbxPlan.Size = new System.Drawing.Size(124, 21);
