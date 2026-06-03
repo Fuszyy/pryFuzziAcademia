@@ -37,10 +37,8 @@
             this.cbxPlan = new System.Windows.Forms.ComboBox();
             this.lblActive = new System.Windows.Forms.Label();
             this.chkActive = new System.Windows.Forms.CheckBox();
-            this.btnList = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
-            this.btnPlanLoad = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnBack = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -49,7 +47,7 @@
             // lblCode
             // 
             this.lblCode.AutoSize = true;
-            this.lblCode.Location = new System.Drawing.Point(22, 35);
+            this.lblCode.Location = new System.Drawing.Point(22, 40);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(40, 13);
             this.lblCode.TabIndex = 0;
@@ -58,7 +56,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(22, 66);
+            this.lblName.Location = new System.Drawing.Point(22, 71);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(44, 13);
             this.lblName.TabIndex = 1;
@@ -68,7 +66,7 @@
             // lblPlan
             // 
             this.lblPlan.AutoSize = true;
-            this.lblPlan.Location = new System.Drawing.Point(22, 100);
+            this.lblPlan.Location = new System.Drawing.Point(22, 105);
             this.lblPlan.Name = "lblPlan";
             this.lblPlan.Size = new System.Drawing.Size(28, 13);
             this.lblPlan.TabIndex = 2;
@@ -77,7 +75,7 @@
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(73, 32);
+            this.txtCode.Location = new System.Drawing.Point(73, 37);
             this.txtCode.Mask = "00000";
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(36, 20);
@@ -88,7 +86,7 @@
             // txtName
             // 
             this.txtName.Enabled = false;
-            this.txtName.Location = new System.Drawing.Point(73, 63);
+            this.txtName.Location = new System.Drawing.Point(73, 68);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(124, 20);
             this.txtName.TabIndex = 4;
@@ -99,7 +97,7 @@
             this.cbxPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPlan.Enabled = false;
             this.cbxPlan.FormattingEnabled = true;
-            this.cbxPlan.Location = new System.Drawing.Point(73, 97);
+            this.cbxPlan.Location = new System.Drawing.Point(73, 102);
             this.cbxPlan.Name = "cbxPlan";
             this.cbxPlan.Size = new System.Drawing.Size(124, 21);
             this.cbxPlan.TabIndex = 5;
@@ -108,7 +106,7 @@
             // lblActive
             // 
             this.lblActive.AutoSize = true;
-            this.lblActive.Location = new System.Drawing.Point(22, 138);
+            this.lblActive.Location = new System.Drawing.Point(22, 143);
             this.lblActive.Name = "lblActive";
             this.lblActive.Size = new System.Drawing.Size(37, 13);
             this.lblActive.TabIndex = 6;
@@ -117,22 +115,12 @@
             // chkActive
             // 
             this.chkActive.AutoSize = true;
-            this.chkActive.Location = new System.Drawing.Point(72, 138);
+            this.chkActive.Location = new System.Drawing.Point(72, 143);
             this.chkActive.Name = "chkActive";
             this.chkActive.Size = new System.Drawing.Size(15, 14);
             this.chkActive.TabIndex = 7;
             this.chkActive.UseVisualStyleBackColor = true;
             this.chkActive.CheckedChanged += new System.EventHandler(this.chkActive_CheckedChanged);
-            // 
-            // btnList
-            // 
-            this.btnList.Location = new System.Drawing.Point(26, 172);
-            this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(75, 23);
-            this.btnList.TabIndex = 8;
-            this.btnList.Text = "Listado";
-            this.btnList.UseVisualStyleBackColor = true;
-            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnCancel
             // 
@@ -153,16 +141,6 @@
             this.btnAccept.Text = "Registrar";
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
-            // 
-            // btnPlanLoad
-            // 
-            this.btnPlanLoad.Location = new System.Drawing.Point(107, 143);
-            this.btnPlanLoad.Name = "btnPlanLoad";
-            this.btnPlanLoad.Size = new System.Drawing.Size(156, 23);
-            this.btnPlanLoad.TabIndex = 12;
-            this.btnPlanLoad.Text = "Cargar Plan de Estudio...";
-            this.btnPlanLoad.UseVisualStyleBackColor = true;
-            this.btnPlanLoad.Click += new System.EventHandler(this.btnPlanLoad_Click);
             // 
             // menuStrip1
             // 
@@ -186,10 +164,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(271, 204);
-            this.Controls.Add(this.btnPlanLoad);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnList);
             this.Controls.Add(this.chkActive);
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.cbxPlan);
@@ -223,10 +199,8 @@
         private System.Windows.Forms.ComboBox cbxPlan;
         private System.Windows.Forms.Label lblActive;
         private System.Windows.Forms.CheckBox chkActive;
-        private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAccept;
-        private System.Windows.Forms.Button btnPlanLoad;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnBack;
     }
