@@ -103,7 +103,7 @@ namespace pryFuzziAcademia
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            lblLoginDateShow.Text = varLoginDate.ToString();
+          
         }
 
         private void frmRegistro_Load(object sender, EventArgs e)
@@ -137,6 +137,13 @@ namespace pryFuzziAcademia
         private void txtCode_TextChanged(object sender, EventArgs e)
         {
             txtName.Enabled = true;
+        }
+
+        private void volverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal ventana = new frmPrincipal();
+            ventana.ShowDialog();
         }
     }
 }

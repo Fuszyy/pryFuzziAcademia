@@ -20,8 +20,7 @@ namespace pryFuzziAcademia
         private void btnStart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmRegistro ventanaRegistro = new frmRegistro();
-            ventanaRegistro.varLoginDate = DateTime.Now;
+            frmPrincipal ventanaRegistro = new frmPrincipal();
             ventanaRegistro.ShowDialog();
         }
     }

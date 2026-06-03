@@ -65,5 +65,19 @@ namespace pryFuzziAcademia
         {
             dtpBirthDate.Enabled = true;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal ventana = new frmPrincipal();
+            ventana.ShowDialog();
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal ventana = new frmPrincipal();
+            ventana.ShowDialog();
+        }
     }
 }

@@ -40,10 +40,10 @@
             this.btnList = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
-            this.tstDateShow = new System.Windows.Forms.ToolStrip();
-            this.lblLoginDateShow = new System.Windows.Forms.ToolStripLabel();
             this.btnPlanLoad = new System.Windows.Forms.Button();
-            this.tstDateShow.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.btnBack = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCode
@@ -154,21 +154,6 @@
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
-            // tstDateShow
-            // 
-            this.tstDateShow.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblLoginDateShow});
-            this.tstDateShow.Location = new System.Drawing.Point(0, 0);
-            this.tstDateShow.Name = "tstDateShow";
-            this.tstDateShow.Size = new System.Drawing.Size(271, 25);
-            this.tstDateShow.TabIndex = 11;
-            this.tstDateShow.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
-            // 
-            // lblLoginDateShow
-            // 
-            this.lblLoginDateShow.Name = "lblLoginDateShow";
-            this.lblLoginDateShow.Size = new System.Drawing.Size(0, 22);
-            // 
             // btnPlanLoad
             // 
             this.btnPlanLoad.Location = new System.Drawing.Point(107, 143);
@@ -179,13 +164,29 @@
             this.btnPlanLoad.UseVisualStyleBackColor = true;
             this.btnPlanLoad.Click += new System.EventHandler(this.btnPlanLoad_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnBack});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(271, 24);
+            this.menuStrip1.TabIndex = 13;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // btnBack
+            // 
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(51, 20);
+            this.btnBack.Text = "Volver";
+            this.btnBack.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(271, 204);
             this.Controls.Add(this.btnPlanLoad);
-            this.Controls.Add(this.tstDateShow);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnList);
@@ -197,13 +198,16 @@
             this.Controls.Add(this.lblPlan);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblCode);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Asignatura";
             this.Load += new System.EventHandler(this.frmRegistro_Load);
-            this.tstDateShow.ResumeLayout(false);
-            this.tstDateShow.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,8 +226,8 @@
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAccept;
-        private System.Windows.Forms.ToolStrip tstDateShow;
-        private System.Windows.Forms.ToolStripLabel lblLoginDateShow;
         private System.Windows.Forms.Button btnPlanLoad;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem btnBack;
     }
 }

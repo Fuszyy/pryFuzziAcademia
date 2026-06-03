@@ -56,15 +56,22 @@ namespace pryFuzziAcademia
             {
                 if (ArrPlans[count] != null)
                 {
-                    lstPlans.Items.Add(ArrPlans[count]);                    
+                    lstPlans.Items.Add(ArrPlans[count]);
                 }
             }
-           
+
             MessageBox.Show("Planes de estudio cargados.", "Carga de Plan", MessageBoxButtons.OK, MessageBoxIcon.Information);
             frmRegistro ventana2 = new frmRegistro();
 
             ventana2.arrPlanes = ArrPlans;
             ventana2.ShowDialog();
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal ventana = new frmPrincipal();
+            ventana.ShowDialog();
         }
     }
 }

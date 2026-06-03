@@ -43,8 +43,11 @@
             this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmSubj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmActive = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.btnBack = new System.Windows.Forms.ToolStripMenuItem();
             this.gbxSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxSearch
@@ -56,7 +59,7 @@
             this.gbxSearch.Controls.Add(this.rbtNameSearch);
             this.gbxSearch.Controls.Add(this.rbtCodeSearch);
             this.gbxSearch.Controls.Add(this.rbtAllSearch);
-            this.gbxSearch.Location = new System.Drawing.Point(9, 6);
+            this.gbxSearch.Location = new System.Drawing.Point(9, 31);
             this.gbxSearch.Name = "gbxSearch";
             this.gbxSearch.Size = new System.Drawing.Size(200, 127);
             this.gbxSearch.TabIndex = 0;
@@ -133,7 +136,7 @@
             // 
             // btnListSearch
             // 
-            this.btnListSearch.Location = new System.Drawing.Point(137, 139);
+            this.btnListSearch.Location = new System.Drawing.Point(137, 164);
             this.btnListSearch.Name = "btnListSearch";
             this.btnListSearch.Size = new System.Drawing.Size(75, 23);
             this.btnListSearch.TabIndex = 1;
@@ -149,7 +152,7 @@
             this.clmName,
             this.clmSubj,
             this.clmActive});
-            this.dgvGrilla.Location = new System.Drawing.Point(218, 6);
+            this.dgvGrilla.Location = new System.Drawing.Point(218, 31);
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.Size = new System.Drawing.Size(443, 156);
             this.dgvGrilla.TabIndex = 2;
@@ -175,15 +178,34 @@
             this.clmActive.HeaderText = "Activo";
             this.clmActive.Name = "clmActive";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnBack});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(670, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // btnBack
+            // 
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(51, 20);
+            this.btnBack.Text = "Volver";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 167);
+            this.ClientSize = new System.Drawing.Size(670, 198);
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.btnListSearch);
             this.Controls.Add(this.gbxSearch);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado";
@@ -191,7 +213,10 @@
             this.gbxSearch.ResumeLayout(false);
             this.gbxSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -211,5 +236,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmSubj;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmActive;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem btnBack;
     }
 }

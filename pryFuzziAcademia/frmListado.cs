@@ -47,5 +47,12 @@ namespace pryFuzziAcademia
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal ventana = new frmPrincipal();
+            ventana.ShowDialog();
+        }
     }
 }
