@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.btnStart = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -59,9 +60,10 @@
             this.ClientSize = new System.Drawing.Size(273, 200);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnStart);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bienvenido";
+            this.Text = "Inicio";
             this.ResumeLayout(false);
             this.PerformLayout();
 

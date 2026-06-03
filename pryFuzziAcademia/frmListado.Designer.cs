@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListado));
             this.gbxSearch = new System.Windows.Forms.GroupBox();
             this.cbxPlanSearch = new System.Windows.Forms.ComboBox();
             this.txtNameSearch = new System.Windows.Forms.TextBox();
@@ -182,6 +183,7 @@
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.btnListSearch);
             this.Controls.Add(this.gbxSearch);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado";

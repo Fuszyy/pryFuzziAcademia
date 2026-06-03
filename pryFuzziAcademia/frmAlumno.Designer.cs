@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlumno));
             this.btnList = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -55,6 +56,7 @@
             this.btnList.TabIndex = 0;
             this.btnList.Text = "Listar";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnEdit
             // 
@@ -187,7 +189,7 @@
             // lblTEMP2
             // 
             this.lblTEMP2.AutoSize = true;
-            this.lblTEMP2.Location = new System.Drawing.Point(12, 132);
+            this.lblTEMP2.Location = new System.Drawing.Point(12, 137);
             this.lblTEMP2.Name = "lblTEMP2";
             this.lblTEMP2.Size = new System.Drawing.Size(100, 13);
             this.lblTEMP2.TabIndex = 18;
@@ -215,6 +217,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnList);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlumno";
             this.Text = "Cargar Alumno";
             this.Load += new System.EventHandler(this.frmAlumno_Load);

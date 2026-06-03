@@ -26,5 +26,19 @@ namespace pryFuzziAcademia
         {
 
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            if (txtDNI.MaskCompleted && txtName.Text != null && txtLastName.Text != null && txtAddress.Text != null && txtContact.MaskCompleted && txtBirthDate.MaskCompleted)
+            {
+
+                MessageBox.Show("Alumno registrado con éxito.", "Registrar Alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Completar los datos.", "Registrar Alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+        }
     }
 }

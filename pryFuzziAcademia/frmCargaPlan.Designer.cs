@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCargaPlan));
             this.btnCancelPlan = new System.Windows.Forms.Button();
             this.btnLoadPlan = new System.Windows.Forms.Button();
             this.txtPlanName = new System.Windows.Forms.TextBox();
@@ -101,6 +102,7 @@
             this.Controls.Add(this.txtPlanName);
             this.Controls.Add(this.btnLoadPlan);
             this.Controls.Add(this.btnCancelPlan);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCargaPlan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cargar Plan de Estudio";
