@@ -43,9 +43,9 @@
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.txtDNI = new System.Windows.Forms.MaskedTextBox();
             this.txtContact = new System.Windows.Forms.MaskedTextBox();
-            this.txtBirthDate = new System.Windows.Forms.MaskedTextBox();
             this.lblTEMP = new System.Windows.Forms.Label();
             this.lblTEMP2 = new System.Windows.Forms.Label();
+            this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnList
@@ -78,29 +78,35 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(53, 52);
+            this.txtName.Enabled = false;
+            this.txtName.Location = new System.Drawing.Point(61, 52);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(101, 20);
             this.txtName.TabIndex = 4;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(271, 18);
+            this.txtAddress.Enabled = false;
+            this.txtAddress.Location = new System.Drawing.Point(279, 18);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(101, 20);
             this.txtAddress.TabIndex = 7;
+            this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(53, 88);
+            this.txtLastName.Enabled = false;
+            this.txtLastName.Location = new System.Drawing.Point(61, 88);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(101, 20);
             this.txtLastName.TabIndex = 8;
+            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // lblDNI
             // 
             this.lblDNI.AutoSize = true;
-            this.lblDNI.Location = new System.Drawing.Point(21, 21);
+            this.lblDNI.Location = new System.Drawing.Point(29, 21);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(26, 13);
             this.lblDNI.TabIndex = 9;
@@ -109,7 +115,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(3, 55);
+            this.lblName.Location = new System.Drawing.Point(11, 55);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(44, 13);
             this.lblName.TabIndex = 10;
@@ -118,7 +124,7 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(3, 91);
+            this.lblLastName.Location = new System.Drawing.Point(11, 91);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(44, 13);
             this.lblLastName.TabIndex = 11;
@@ -127,7 +133,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(214, 21);
+            this.lblAddress.Location = new System.Drawing.Point(222, 21);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(52, 13);
             this.lblAddress.TabIndex = 12;
@@ -136,7 +142,7 @@
             // lblContact
             // 
             this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(216, 55);
+            this.lblContact.Location = new System.Drawing.Point(224, 55);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(50, 13);
             this.lblContact.TabIndex = 13;
@@ -145,7 +151,7 @@
             // lblBirthDate
             // 
             this.lblBirthDate.AutoSize = true;
-            this.lblBirthDate.Location = new System.Drawing.Point(158, 91);
+            this.lblBirthDate.Location = new System.Drawing.Point(166, 91);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(108, 13);
             this.lblBirthDate.TabIndex = 14;
@@ -153,34 +159,28 @@
             // 
             // txtDNI
             // 
-            this.txtDNI.Location = new System.Drawing.Point(53, 18);
+            this.txtDNI.Location = new System.Drawing.Point(61, 18);
             this.txtDNI.Mask = "99999999";
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(53, 20);
             this.txtDNI.TabIndex = 15;
             this.txtDNI.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.txtDNI.TextChanged += new System.EventHandler(this.txtDNI_TextChanged);
             // 
             // txtContact
             // 
-            this.txtContact.Location = new System.Drawing.Point(271, 52);
+            this.txtContact.Enabled = false;
+            this.txtContact.Location = new System.Drawing.Point(279, 52);
             this.txtContact.Mask = "(999)000-0000";
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(76, 20);
             this.txtContact.TabIndex = 16;
-            // 
-            // txtBirthDate
-            // 
-            this.txtBirthDate.Location = new System.Drawing.Point(269, 88);
-            this.txtBirthDate.Mask = "00/00/0000";
-            this.txtBirthDate.Name = "txtBirthDate";
-            this.txtBirthDate.Size = new System.Drawing.Size(76, 20);
-            this.txtBirthDate.TabIndex = 17;
-            this.txtBirthDate.ValidatingType = typeof(System.DateTime);
+            this.txtContact.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtContact_MaskInputRejected);
             // 
             // lblTEMP
             // 
             this.lblTEMP.AutoSize = true;
-            this.lblTEMP.Location = new System.Drawing.Point(12, 119);
+            this.lblTEMP.Location = new System.Drawing.Point(20, 119);
             this.lblTEMP.Name = "lblTEMP";
             this.lblTEMP.Size = new System.Drawing.Size(76, 13);
             this.lblTEMP.TabIndex = 19;
@@ -189,20 +189,29 @@
             // lblTEMP2
             // 
             this.lblTEMP2.AutoSize = true;
-            this.lblTEMP2.Location = new System.Drawing.Point(12, 137);
+            this.lblTEMP2.Location = new System.Drawing.Point(20, 138);
             this.lblTEMP2.Name = "lblTEMP2";
             this.lblTEMP2.Size = new System.Drawing.Size(100, 13);
             this.lblTEMP2.TabIndex = 18;
             this.lblTEMP2.Text = "fecha Actualización";
+            // 
+            // dtpBirthDate
+            // 
+            this.dtpBirthDate.Enabled = false;
+            this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpBirthDate.Location = new System.Drawing.Point(280, 88);
+            this.dtpBirthDate.Name = "dtpBirthDate";
+            this.dtpBirthDate.Size = new System.Drawing.Size(100, 20);
+            this.dtpBirthDate.TabIndex = 20;
             // 
             // frmAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 160);
+            this.Controls.Add(this.dtpBirthDate);
             this.Controls.Add(this.lblTEMP);
             this.Controls.Add(this.lblTEMP2);
-            this.Controls.Add(this.txtBirthDate);
             this.Controls.Add(this.txtContact);
             this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.lblBirthDate);
@@ -242,8 +251,8 @@
         private System.Windows.Forms.Label lblBirthDate;
         private System.Windows.Forms.MaskedTextBox txtDNI;
         private System.Windows.Forms.MaskedTextBox txtContact;
-        private System.Windows.Forms.MaskedTextBox txtBirthDate;
         private System.Windows.Forms.Label lblTEMP;
         private System.Windows.Forms.Label lblTEMP2;
+        private System.Windows.Forms.DateTimePicker dtpBirthDate;
     }
 }
