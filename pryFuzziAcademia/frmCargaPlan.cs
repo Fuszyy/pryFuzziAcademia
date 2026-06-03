@@ -62,7 +62,7 @@ namespace pryFuzziAcademia
 
             MessageBox.Show("Planes de estudio cargados.", "Carga de Plan", MessageBoxButtons.OK, MessageBoxIcon.Information);
             frmRegistro ventana2 = new frmRegistro();
-
+            this.Hide();
             ventana2.arrPlanes = ArrPlans;
             ventana2.ShowDialog();
         }
