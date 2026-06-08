@@ -143,6 +143,8 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmPrincipal ventana = new frmPrincipal();
+            ventana.arrPlanes = arrPlanes;
+            ventana.arrMaterias = arrMaterias;
             ventana.ShowDialog();
         }
     }

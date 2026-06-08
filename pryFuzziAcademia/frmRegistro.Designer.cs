@@ -137,7 +137,7 @@
             this.btnAccept.Location = new System.Drawing.Point(188, 172);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(75, 23);
-            this.btnAccept.TabIndex = 5;
+            this.btnAccept.TabIndex = 1;
             this.btnAccept.Text = "Registrar";
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);

@@ -33,6 +33,17 @@ namespace pryFuzziAcademia
             {
 
                 MessageBox.Show("Alumno registrado con éxito.", "Registrar Alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtDNI.Text = string.Empty;
+                txtName.Text = string.Empty;
+                txtLastName.Text = string.Empty;
+                txtAddress.Text = string.Empty;
+                txtContact.Text = string.Empty;
+
+                txtName.Enabled = false;
+                txtLastName.Enabled = false;
+                txtAddress.Enabled = false;
+                txtContact.Enabled = false;
+                dtpBirthDate.Enabled = false;
             }
             else
             {

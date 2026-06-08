@@ -16,8 +16,11 @@ namespace pryFuzziAcademia
         {
             InitializeComponent();
         }
-        
-        
+        //declaración
+
+        public string[] arrPlanes = new string[5];
+        public string[,] arrMaterias = new string[5, 4];
+
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
@@ -28,6 +31,7 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmListado ventana = new frmListado();
+            ventana.arrMateriasListado = arrMaterias;
             ventana.ShowDialog();
         }
 
@@ -47,7 +51,7 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmRegistro ventana = new frmRegistro();
-            ventana.varLoginDate = DateTime.Now;
+            ventana.arrPlanes = arrPlanes;
             ventana.ShowDialog();
         }
 
