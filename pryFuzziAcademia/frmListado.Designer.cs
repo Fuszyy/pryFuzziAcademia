@@ -62,7 +62,7 @@
             this.gbxSearch.Location = new System.Drawing.Point(9, 31);
             this.gbxSearch.Name = "gbxSearch";
             this.gbxSearch.Size = new System.Drawing.Size(200, 127);
-            this.gbxSearch.TabIndex = 0;
+            this.gbxSearch.TabIndex = 1;
             this.gbxSearch.TabStop = false;
             this.gbxSearch.Text = "Buscar";
             this.gbxSearch.Enter += new System.EventHandler(this.gbxSearch_Enter);
@@ -118,7 +118,7 @@
             this.rbtCodeSearch.Location = new System.Drawing.Point(6, 45);
             this.rbtCodeSearch.Name = "rbtCodeSearch";
             this.rbtCodeSearch.Size = new System.Drawing.Size(58, 17);
-            this.rbtCodeSearch.TabIndex = 1;
+            this.rbtCodeSearch.TabIndex = 2;
             this.rbtCodeSearch.TabStop = true;
             this.rbtCodeSearch.Text = "Código";
             this.rbtCodeSearch.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.rbtAllSearch.Location = new System.Drawing.Point(6, 23);
             this.rbtAllSearch.Name = "rbtAllSearch";
             this.rbtAllSearch.Size = new System.Drawing.Size(50, 17);
-            this.rbtAllSearch.TabIndex = 0;
+            this.rbtAllSearch.TabIndex = 1;
             this.rbtAllSearch.TabStop = true;
             this.rbtAllSearch.Text = "Todo";
             this.rbtAllSearch.UseVisualStyleBackColor = true;
@@ -139,7 +139,7 @@
             this.btnListSearch.Location = new System.Drawing.Point(137, 164);
             this.btnListSearch.Name = "btnListSearch";
             this.btnListSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnListSearch.TabIndex = 1;
+            this.btnListSearch.TabIndex = 3;
             this.btnListSearch.Text = "Buscar";
             this.btnListSearch.UseVisualStyleBackColor = true;
             this.btnListSearch.Click += new System.EventHandler(this.button1_Click);
@@ -185,7 +185,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(670, 24);
-            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // btnBack

@@ -51,6 +51,7 @@
             this.mstMenu.Size = new System.Drawing.Size(336, 24);
             this.mstMenu.TabIndex = 0;
             this.mstMenu.Text = "menuStrip1";
+            this.mstMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mstMenu_ItemClicked);
             // 
             // btnRegistro
             // 

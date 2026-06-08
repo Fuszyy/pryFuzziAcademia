@@ -38,7 +38,7 @@
             this.btnStart.Location = new System.Drawing.Point(82, 125);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(109, 41);
-            this.btnStart.TabIndex = 0;
+            this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Iniciar";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
@@ -50,7 +50,7 @@
             this.lblWelcome.Location = new System.Drawing.Point(87, 82);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(102, 20);
-            this.lblWelcome.TabIndex = 1;
+            this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Bienvenido.";
             // 
             // frmInicio

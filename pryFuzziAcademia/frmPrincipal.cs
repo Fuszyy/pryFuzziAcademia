@@ -62,5 +62,10 @@ namespace pryFuzziAcademia
         {
 
         }
+
+        private void mstMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

@@ -50,7 +50,7 @@
             this.lblCode.Location = new System.Drawing.Point(22, 40);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(40, 13);
-            this.lblCode.TabIndex = 0;
+            this.lblCode.TabIndex = 7;
             this.lblCode.Text = "Código";
             // 
             // lblName
@@ -59,7 +59,7 @@
             this.lblName.Location = new System.Drawing.Point(22, 71);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(44, 13);
-            this.lblName.TabIndex = 1;
+            this.lblName.TabIndex = 8;
             this.lblName.Text = "Nombre";
             this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
@@ -69,7 +69,7 @@
             this.lblPlan.Location = new System.Drawing.Point(22, 105);
             this.lblPlan.Name = "lblPlan";
             this.lblPlan.Size = new System.Drawing.Size(28, 13);
-            this.lblPlan.TabIndex = 2;
+            this.lblPlan.TabIndex = 9;
             this.lblPlan.Text = "Plan";
             this.lblPlan.Click += new System.EventHandler(this.lblPlan_Click);
             // 
@@ -79,7 +79,7 @@
             this.txtCode.Mask = "00000";
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(36, 20);
-            this.txtCode.TabIndex = 3;
+            this.txtCode.TabIndex = 0;
             this.txtCode.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCode_MaskInputRejected);
             this.txtCode.TextChanged += new System.EventHandler(this.txtCode_TextChanged);
             // 
@@ -89,7 +89,7 @@
             this.txtName.Location = new System.Drawing.Point(73, 68);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(124, 20);
-            this.txtName.TabIndex = 4;
+            this.txtName.TabIndex = 1;
             this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cbxPlan
@@ -100,7 +100,7 @@
             this.cbxPlan.Location = new System.Drawing.Point(73, 102);
             this.cbxPlan.Name = "cbxPlan";
             this.cbxPlan.Size = new System.Drawing.Size(124, 21);
-            this.cbxPlan.TabIndex = 5;
+            this.cbxPlan.TabIndex = 2;
             this.cbxPlan.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblActive
@@ -109,7 +109,7 @@
             this.lblActive.Location = new System.Drawing.Point(22, 143);
             this.lblActive.Name = "lblActive";
             this.lblActive.Size = new System.Drawing.Size(37, 13);
-            this.lblActive.TabIndex = 6;
+            this.lblActive.TabIndex = 10;
             this.lblActive.Text = "Activo";
             // 
             // chkActive
@@ -118,7 +118,7 @@
             this.chkActive.Location = new System.Drawing.Point(72, 143);
             this.chkActive.Name = "chkActive";
             this.chkActive.Size = new System.Drawing.Size(15, 14);
-            this.chkActive.TabIndex = 7;
+            this.chkActive.TabIndex = 3;
             this.chkActive.UseVisualStyleBackColor = true;
             this.chkActive.CheckedChanged += new System.EventHandler(this.chkActive_CheckedChanged);
             // 
@@ -127,7 +127,7 @@
             this.btnCancel.Location = new System.Drawing.Point(107, 172);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 9;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -137,7 +137,7 @@
             this.btnAccept.Location = new System.Drawing.Point(188, 172);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(75, 23);
-            this.btnAccept.TabIndex = 10;
+            this.btnAccept.TabIndex = 5;
             this.btnAccept.Text = "Registrar";
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
@@ -149,7 +149,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(271, 24);
-            this.menuStrip1.TabIndex = 13;
+            this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // btnBack

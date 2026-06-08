@@ -45,7 +45,7 @@
             this.btnCancelPlan.Location = new System.Drawing.Point(89, 135);
             this.btnCancelPlan.Name = "btnCancelPlan";
             this.btnCancelPlan.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelPlan.TabIndex = 0;
+            this.btnCancelPlan.TabIndex = 3;
             this.btnCancelPlan.Text = "Cancelar";
             this.btnCancelPlan.UseVisualStyleBackColor = true;
             this.btnCancelPlan.Click += new System.EventHandler(this.btnCancelPlan_Click);
@@ -55,7 +55,7 @@
             this.btnLoadPlan.Location = new System.Drawing.Point(170, 135);
             this.btnLoadPlan.Name = "btnLoadPlan";
             this.btnLoadPlan.Size = new System.Drawing.Size(75, 23);
-            this.btnLoadPlan.TabIndex = 1;
+            this.btnLoadPlan.TabIndex = 4;
             this.btnLoadPlan.Text = "Cargar";
             this.btnLoadPlan.UseVisualStyleBackColor = true;
             this.btnLoadPlan.Click += new System.EventHandler(this.btnLoadPlan_Click);
@@ -65,7 +65,7 @@
             this.txtPlanName.Location = new System.Drawing.Point(62, 34);
             this.txtPlanName.Name = "txtPlanName";
             this.txtPlanName.Size = new System.Drawing.Size(108, 20);
-            this.txtPlanName.TabIndex = 2;
+            this.txtPlanName.TabIndex = 0;
             // 
             // lblPlanName
             // 
@@ -73,7 +73,7 @@
             this.lblPlanName.Location = new System.Drawing.Point(9, 37);
             this.lblPlanName.Name = "lblPlanName";
             this.lblPlanName.Size = new System.Drawing.Size(47, 13);
-            this.lblPlanName.TabIndex = 3;
+            this.lblPlanName.TabIndex = 5;
             this.lblPlanName.Text = "Nombre:";
             // 
             // btnPlanList
@@ -81,7 +81,7 @@
             this.btnPlanList.Location = new System.Drawing.Point(8, 135);
             this.btnPlanList.Name = "btnPlanList";
             this.btnPlanList.Size = new System.Drawing.Size(75, 23);
-            this.btnPlanList.TabIndex = 4;
+            this.btnPlanList.TabIndex = 2;
             this.btnPlanList.Text = "Listar";
             this.btnPlanList.UseVisualStyleBackColor = true;
             this.btnPlanList.Click += new System.EventHandler(this.btnPlanList_Click);
@@ -92,7 +92,7 @@
             this.lstPlans.Location = new System.Drawing.Point(12, 60);
             this.lstPlans.Name = "lstPlans";
             this.lstPlans.Size = new System.Drawing.Size(158, 69);
-            this.lstPlans.TabIndex = 5;
+            this.lstPlans.TabIndex = 1;
             // 
             // menuStrip1
             // 
@@ -101,7 +101,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(258, 24);
-            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // btnBack
