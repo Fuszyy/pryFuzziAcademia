@@ -17,6 +17,9 @@ namespace pryFuzziAcademia
             InitializeComponent();
         }
 
+        public string[] arrPlanes = new string[5];
+        public string[,] arrMaterias = new string[5, 4];
+
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
@@ -88,7 +91,14 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmPrincipal ventana = new frmPrincipal();
+            ventana.arrMaterias = arrMaterias;
+            ventana.arrPlanes = arrPlanes;
             ventana.ShowDialog();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

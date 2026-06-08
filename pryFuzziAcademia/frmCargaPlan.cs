@@ -15,6 +15,7 @@ namespace pryFuzziAcademia
 {
     public partial class frmCargaPlan : Form
     {
+        public string[,] arrMaterias = new string[5, 4];
         public string[] ArrPlans = new string[5];
         int varCounter = 0;
         public frmCargaPlan()
@@ -72,7 +73,45 @@ namespace pryFuzziAcademia
             this.Hide();
             frmPrincipal ventana = new frmPrincipal();
             ventana.arrPlanes = ArrPlans;
+            ventana.arrMaterias = arrMaterias;
             ventana.ShowDialog();
+        }
+
+        private void frmCargaPlan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            for (int count = 0; count < ArrPlans.Length; count++)
+            {
+                if (ArrPlans[count] != null)
+                {
+                    ArrPlans[count] = null;
+                }
+            }
+            lstPlans.Items.Clear();
+
+            DialogResult result = MessageBox.Show("¿Eliminar planes de estudio?", "Plan de Estudio", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                for (int count = 0; count < ArrPlans.Length; count++)
+                {
+                    if (ArrPlans[count] != null)
+                    {
+                        ArrPlans[count] = null;
+                    }
+                }
+                lstPlans.Items.Clear();
+
+                MessageBox.Show("Planes de estudio eliminados", "Plan de Estudio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

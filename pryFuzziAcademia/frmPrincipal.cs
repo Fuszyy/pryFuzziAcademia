@@ -32,6 +32,7 @@ namespace pryFuzziAcademia
             this.Hide();
             frmListado ventana = new frmListado();
             ventana.arrMateriasListado = arrMaterias;
+            ventana.arrPlanes = arrPlanes;
             ventana.ShowDialog();
         }
 
@@ -44,6 +45,8 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmAlumno ventana = new frmAlumno();
+            ventana.arrMaterias = arrMaterias;
+            ventana.arrPlanes = arrPlanes;
             ventana.ShowDialog();
         }
 
@@ -52,6 +55,7 @@ namespace pryFuzziAcademia
             this.Hide();
             frmRegistro ventana = new frmRegistro();
             ventana.arrPlanes = arrPlanes;
+            ventana.arrMaterias = arrMaterias;
             ventana.ShowDialog();
         }
 
@@ -59,6 +63,8 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmCargaPlan ventana = new frmCargaPlan();
+            ventana.ArrPlans = arrPlanes;
+            ventana.arrMaterias = arrMaterias;
             ventana.ShowDialog();
         }
 

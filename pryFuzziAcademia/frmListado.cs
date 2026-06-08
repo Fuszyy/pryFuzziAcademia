@@ -13,6 +13,7 @@ namespace pryFuzziAcademia
     public partial class frmListado : Form
     {
         public string[,] arrMateriasListado = new string[4, 5];
+        public string[] arrPlanes = new string[5];
         public frmListado()
         {
             InitializeComponent();
@@ -52,6 +53,8 @@ namespace pryFuzziAcademia
         {
             this.Hide();
             frmPrincipal ventana = new frmPrincipal();
+            ventana.arrMaterias = arrMateriasListado;
+            ventana.arrPlanes = arrPlanes;
             ventana.ShowDialog();
         }
     }

@@ -37,12 +37,14 @@
             this.lstPlans = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnBack = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnMod = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancelPlan
             // 
-            this.btnCancelPlan.Location = new System.Drawing.Point(89, 135);
+            this.btnCancelPlan.Location = new System.Drawing.Point(170, 164);
             this.btnCancelPlan.Name = "btnCancelPlan";
             this.btnCancelPlan.Size = new System.Drawing.Size(75, 23);
             this.btnCancelPlan.TabIndex = 3;
@@ -52,7 +54,7 @@
             // 
             // btnLoadPlan
             // 
-            this.btnLoadPlan.Location = new System.Drawing.Point(170, 135);
+            this.btnLoadPlan.Location = new System.Drawing.Point(89, 164);
             this.btnLoadPlan.Name = "btnLoadPlan";
             this.btnLoadPlan.Size = new System.Drawing.Size(75, 23);
             this.btnLoadPlan.TabIndex = 4;
@@ -111,11 +113,33 @@
             this.btnBack.Text = "Volver";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
+            // btnMod
+            // 
+            this.btnMod.Location = new System.Drawing.Point(89, 135);
+            this.btnMod.Name = "btnMod";
+            this.btnMod.Size = new System.Drawing.Size(75, 23);
+            this.btnMod.TabIndex = 6;
+            this.btnMod.Text = "Modificar";
+            this.btnMod.UseVisualStyleBackColor = true;
+            this.btnMod.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Location = new System.Drawing.Point(171, 135);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(75, 23);
+            this.btnDel.TabIndex = 7;
+            this.btnDel.Text = "Eliminar";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
             // frmCargaPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(258, 168);
+            this.ClientSize = new System.Drawing.Size(258, 194);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnMod);
             this.Controls.Add(this.lstPlans);
             this.Controls.Add(this.btnPlanList);
             this.Controls.Add(this.lblPlanName);
@@ -128,6 +152,7 @@
             this.Name = "frmCargaPlan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cargar Plan de Estudio";
+            this.Load += new System.EventHandler(this.frmCargaPlan_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -145,5 +170,7 @@
         private System.Windows.Forms.ListBox lstPlans;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnBack;
+        private System.Windows.Forms.Button btnMod;
+        private System.Windows.Forms.Button btnDel;
     }
 }

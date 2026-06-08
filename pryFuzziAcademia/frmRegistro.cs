@@ -15,7 +15,7 @@ namespace pryFuzziAcademia
     {
 
         
-        string[,] arrMaterias = new string[5, 4];
+        public string[,] arrMaterias = new string[5, 4];
         int varRowCount = 0;
 
         public string[] arrPlanes = new string[5];
