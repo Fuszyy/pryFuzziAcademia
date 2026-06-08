@@ -14,7 +14,7 @@ namespace pryFuzziAcademia
     public partial class frmRegistro : Form
     {
 
-        public DateTime varLoginDate;
+        
         string[,] arrMaterias = new string[5, 4];
         int varRowCount = 0;
 

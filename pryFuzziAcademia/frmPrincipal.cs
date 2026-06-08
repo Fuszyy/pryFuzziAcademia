@@ -24,7 +24,7 @@ namespace pryFuzziAcademia
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            lblDateNow.Text = DateTime.Now.ToString();
+            lblDateNow.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,6 +68,11 @@ namespace pryFuzziAcademia
         }
 
         private void mstMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void lblDateNow_Click(object sender, EventArgs e)
         {
 
         }

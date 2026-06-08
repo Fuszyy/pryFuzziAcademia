@@ -108,6 +108,7 @@
             this.lblDateNow.Name = "lblDateNow";
             this.lblDateNow.Size = new System.Drawing.Size(12, 17);
             this.lblDateNow.Text = "-";
+            this.lblDateNow.Click += new System.EventHandler(this.lblDateNow_Click);
             // 
             // frmPrincipal
             // 
