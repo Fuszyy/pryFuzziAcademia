@@ -37,6 +37,7 @@
             this.btnListado = new System.Windows.Forms.ToolStripMenuItem();
             this.stsMenu = new System.Windows.Forms.StatusStrip();
             this.lblDateNow = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mstMenu.SuspendLayout();
             this.stsMenu.SuspendLayout();
             this.SuspendLayout();
@@ -45,7 +46,8 @@
             // 
             this.mstMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnRegistro,
-            this.btnListado});
+            this.btnListado,
+            this.btnExit});
             this.mstMenu.Location = new System.Drawing.Point(0, 0);
             this.mstMenu.Name = "mstMenu";
             this.mstMenu.Size = new System.Drawing.Size(336, 24);
@@ -67,21 +69,21 @@
             // btnAlumno
             // 
             this.btnAlumno.Name = "btnAlumno";
-            this.btnAlumno.Size = new System.Drawing.Size(180, 22);
+            this.btnAlumno.Size = new System.Drawing.Size(155, 22);
             this.btnAlumno.Text = "Alumno";
             this.btnAlumno.Click += new System.EventHandler(this.btnAlumno_Click);
             // 
             // btnMateria
             // 
             this.btnMateria.Name = "btnMateria";
-            this.btnMateria.Size = new System.Drawing.Size(180, 22);
+            this.btnMateria.Size = new System.Drawing.Size(155, 22);
             this.btnMateria.Text = "Materia";
             this.btnMateria.Click += new System.EventHandler(this.btnMateria_Click);
             // 
             // btnPlan
             // 
             this.btnPlan.Name = "btnPlan";
-            this.btnPlan.Size = new System.Drawing.Size(180, 22);
+            this.btnPlan.Size = new System.Drawing.Size(155, 22);
             this.btnPlan.Text = "Plan de estudio";
             this.btnPlan.Click += new System.EventHandler(this.btnPlan_Click);
             // 
@@ -109,6 +111,13 @@
             this.lblDateNow.Size = new System.Drawing.Size(12, 17);
             this.lblDateNow.Text = "-";
             this.lblDateNow.Click += new System.EventHandler(this.lblDateNow_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(41, 20);
+            this.btnExit.Text = "Salir";
+            this.btnExit.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -145,5 +154,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnListado;
         private System.Windows.Forms.StatusStrip stsMenu;
         private System.Windows.Forms.ToolStripStatusLabel lblDateNow;
+        private System.Windows.Forms.ToolStripMenuItem btnExit;
     }
 }
