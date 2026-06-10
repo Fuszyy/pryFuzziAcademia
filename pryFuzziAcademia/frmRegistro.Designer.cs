@@ -37,10 +37,11 @@
             this.cbxPlan = new System.Windows.Forms.ComboBox();
             this.lblActive = new System.Windows.Forms.Label();
             this.chkActive = new System.Windows.Forms.CheckBox();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnBack = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,19 +123,9 @@
             this.chkActive.UseVisualStyleBackColor = true;
             this.chkActive.CheckedChanged += new System.EventHandler(this.chkActive_CheckedChanged);
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(107, 172);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancelar";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(188, 172);
+            this.btnAccept.Location = new System.Drawing.Point(23, 173);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(75, 23);
             this.btnAccept.TabIndex = 1;
@@ -159,13 +150,34 @@
             this.btnBack.Text = "Volver";
             this.btnBack.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(104, 173);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 11;
+            this.btnEdit.Text = "Modificar";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Location = new System.Drawing.Point(185, 173);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(75, 23);
+            this.btnDel.TabIndex = 12;
+            this.btnDel.Text = "Eliminar";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(271, 204);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAccept);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.chkActive);
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.cbxPlan);
@@ -199,9 +211,10 @@
         private System.Windows.Forms.ComboBox cbxPlan;
         private System.Windows.Forms.Label lblActive;
         private System.Windows.Forms.CheckBox chkActive;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnBack;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDel;
     }
 }

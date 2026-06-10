@@ -18,6 +18,9 @@ namespace pryFuzziAcademia
         public string[,] arrMaterias = new string[5, 4];
         int varRowCount = 0;
 
+        int c5 = 0;
+        int c4 = 0;
+
         public string[] arrPlanes = new string[5];
         
 
@@ -146,6 +149,32 @@ namespace pryFuzziAcademia
             ventana.arrPlanes = arrPlanes;
             ventana.arrMaterias = arrMaterias;
             ventana.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Eliminar materias permanentemente?", "Registro Materia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                if (c5 != 5 && c5 != 4)
+                {
+                    if (arrMaterias[c5, c4] != null);
+                    {
+                        arrMaterias[c5, c4] = null;
+                        c5++;
+                        c4++;
+                    }
+                }
+                MessageBox.Show("Materias eliminadas.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (btnAccept.Enabled == false)
+                {
+                    btnAccept.Enabled = true;
+                }
+            }
         }
     }
 }
