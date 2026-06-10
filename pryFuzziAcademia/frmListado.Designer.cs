@@ -69,21 +69,27 @@
             // 
             // cbxPlanSearch
             // 
+            this.cbxPlanSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxPlanSearch.Enabled = false;
             this.cbxPlanSearch.FormattingEnabled = true;
             this.cbxPlanSearch.Location = new System.Drawing.Point(71, 93);
             this.cbxPlanSearch.Name = "cbxPlanSearch";
             this.cbxPlanSearch.Size = new System.Drawing.Size(96, 21);
             this.cbxPlanSearch.TabIndex = 6;
+            this.cbxPlanSearch.SelectedIndexChanged += new System.EventHandler(this.cbxPlanSearch_SelectedIndexChanged);
             // 
             // txtNameSearch
             // 
+            this.txtNameSearch.Enabled = false;
             this.txtNameSearch.Location = new System.Drawing.Point(71, 68);
             this.txtNameSearch.Name = "txtNameSearch";
             this.txtNameSearch.Size = new System.Drawing.Size(96, 20);
             this.txtNameSearch.TabIndex = 5;
+            this.txtNameSearch.TextChanged += new System.EventHandler(this.txtNameSearch_TextChanged);
             // 
             // txtCodeSearch
             // 
+            this.txtCodeSearch.Enabled = false;
             this.txtCodeSearch.Location = new System.Drawing.Point(71, 44);
             this.txtCodeSearch.Mask = "00000";
             this.txtCodeSearch.Name = "txtCodeSearch";
@@ -100,6 +106,7 @@
             this.rbtPlanSearch.TabStop = true;
             this.rbtPlanSearch.Text = "Plan";
             this.rbtPlanSearch.UseVisualStyleBackColor = true;
+            this.rbtPlanSearch.CheckedChanged += new System.EventHandler(this.rbtPlanSearch_CheckedChanged);
             // 
             // rbtNameSearch
             // 
@@ -111,6 +118,7 @@
             this.rbtNameSearch.TabStop = true;
             this.rbtNameSearch.Text = "Nombre";
             this.rbtNameSearch.UseVisualStyleBackColor = true;
+            this.rbtNameSearch.CheckedChanged += new System.EventHandler(this.rbtNameSearch_CheckedChanged);
             // 
             // rbtCodeSearch
             // 
@@ -122,6 +130,7 @@
             this.rbtCodeSearch.TabStop = true;
             this.rbtCodeSearch.Text = "Código";
             this.rbtCodeSearch.UseVisualStyleBackColor = true;
+            this.rbtCodeSearch.CheckedChanged += new System.EventHandler(this.rbtCodeSearch_CheckedChanged);
             // 
             // rbtAllSearch
             // 
