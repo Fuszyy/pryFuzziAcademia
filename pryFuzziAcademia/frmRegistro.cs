@@ -153,14 +153,47 @@ namespace pryFuzziAcademia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (txtCode.Text != "" && txtCode.MaskCompleted && txtName.Text != "" && cbxPlan.SelectedItem != null)
+            {
+                DialogResult result = MessageBox.Show("¿Modificar materias actuales?", "Registro Materia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    c5 = 0;
+                    c4 = 0;
+                    if (c5 <= 5 && c4 <= 4)
+                    {
+                        if (arrMaterias[c5, c4] != null) ;
+                        {
+                            arrMaterias[c5, 0] = txtCode.Text;
+                            arrMaterias[c5, 1] = txtName.Text;
+                            arrMaterias[c5, 2] = cbxPlan.Text;
+                            if (chkActive.Checked) { arrMaterias[c5, 3] = "Activo"; }
+                            else { arrMaterias[c5, 3] = "Inactivo"; }
+                            c5++;
+                        }
+                    }
+                    MessageBox.Show("Materias modificadas.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtCode.Text = string.Empty;
+                    txtName.Text = string.Empty;
+                    cbxPlan.SelectedItem = null;
+                    txtName.Enabled = false;
+                    cbxPlan.Enabled = false;
+                    chkActive.Checked = false;
+                }
+                else
+                {
+                    MessageBox.Show("Completar los datos.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
         }
         private void btnDel_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Eliminar materias permanentemente?", "Registro Materia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("¿Eliminar materias permanentemente?", "Registro Materia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                if (c5 != 5 && c5 != 4)
+                c5 = 0;
+                c4 = 0;
+                if (c5 <= 5 && c4 <= 4)
                 {
                     if (arrMaterias[c5, c4] != null);
                     {
@@ -174,6 +207,12 @@ namespace pryFuzziAcademia
                 {
                     btnAccept.Enabled = true;
                 }
+                txtCode.Text = string.Empty;
+                txtName.Text = string.Empty;
+                cbxPlan.SelectedItem = null;
+                txtName.Enabled = false;
+                cbxPlan.Enabled = false;
+                chkActive.Checked = false;
             }
         }
     }

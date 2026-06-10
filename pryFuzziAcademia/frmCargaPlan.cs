@@ -52,20 +52,23 @@ namespace pryFuzziAcademia
 
         private void btnPlanList_Click(object sender, EventArgs e)
         {
-            lstPlans.Items.Clear();
-            for (int count = 0; count < ArrPlans.Length; count++)
+            if (ArrPlans[0] != null)
             {
-                if (ArrPlans[count] != null)
+                lstPlans.Items.Clear();
+                for (int count = 0; count < ArrPlans.Length; count++)
                 {
-                    lstPlans.Items.Add(ArrPlans[count]);
+                    if (ArrPlans[count] != null)
+                    {
+                        lstPlans.Items.Add(ArrPlans[count]);
+                    }
                 }
-            }
 
-            MessageBox.Show("Planes de estudio cargados.", "Carga de Plan", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            frmRegistro ventana2 = new frmRegistro();
-            this.Hide();
-            ventana2.arrPlanes = ArrPlans;
-            ventana2.ShowDialog();
+                MessageBox.Show("Planes de estudio cargados.", "Carga de Plan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Cargue por lo menos 1 plan de estudio.", "Carga de Plan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)
