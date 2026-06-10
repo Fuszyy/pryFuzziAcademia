@@ -14,6 +14,7 @@ namespace pryFuzziAcademia
     {
         public string[,] arrMateriasListado = new string[4, 5];
         public string[] arrPlanes = new string[5];
+        int searchCount = 0;
         public frmListado()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace pryFuzziAcademia
         private void button1_Click(object sender, EventArgs e)
         {
             dgvGrilla.Rows.Clear();
+            searchCount = 0;
             for (int row = 0; row < arrMateriasListado.GetLength(0); row++)
             {    
                 if (arrMateriasListado[row, 0] != null)
@@ -38,12 +40,18 @@ namespace pryFuzziAcademia
                     if (rbtCodeSearch.Checked && arrMateriasListado[row, 0] == txtCodeSearch.Text)
                     {
                         dgvGrilla.Rows.Add(arrMateriasListado[row, 0], arrMateriasListado[row, 1], arrMateriasListado[row, 2], arrMateriasListado[row, 3]);
+                        searchCount++;
                     }
                     if (rbtNameSearch.Checked && arrMateriasListado[row, 1] == txtNameSearch.Text)
                     {
                         dgvGrilla.Rows.Add(arrMateriasListado[row, 0], arrMateriasListado[row, 1], arrMateriasListado[row, 2], arrMateriasListado[row, 3]);
+                        searchCount++;
                     }
                 }
+            }
+            if (rbtAllSearch.Checked == false && searchCount == 0)
+            {
+                DialogResult result = MessageBox.Show("Materia no encontrada.", "Búsqueda de materias", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -115,6 +123,11 @@ namespace pryFuzziAcademia
         }
 
         private void cbxPlanSearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodeSearch_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

@@ -95,6 +95,7 @@
             this.txtCodeSearch.Name = "txtCodeSearch";
             this.txtCodeSearch.Size = new System.Drawing.Size(36, 20);
             this.txtCodeSearch.TabIndex = 4;
+            this.txtCodeSearch.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCodeSearch_MaskInputRejected);
             // 
             // rbtPlanSearch
             // 
