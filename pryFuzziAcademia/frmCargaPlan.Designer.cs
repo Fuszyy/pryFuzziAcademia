@@ -37,7 +37,6 @@
             this.lstPlans = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnBack = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnMod = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +53,7 @@
             // 
             // btnLoadPlan
             // 
-            this.btnLoadPlan.Location = new System.Drawing.Point(89, 164);
+            this.btnLoadPlan.Location = new System.Drawing.Point(90, 135);
             this.btnLoadPlan.Name = "btnLoadPlan";
             this.btnLoadPlan.Size = new System.Drawing.Size(75, 23);
             this.btnLoadPlan.TabIndex = 4;
@@ -80,7 +79,7 @@
             // 
             // btnPlanList
             // 
-            this.btnPlanList.Location = new System.Drawing.Point(8, 135);
+            this.btnPlanList.Location = new System.Drawing.Point(9, 135);
             this.btnPlanList.Name = "btnPlanList";
             this.btnPlanList.Size = new System.Drawing.Size(75, 23);
             this.btnPlanList.TabIndex = 2;
@@ -113,16 +112,6 @@
             this.btnBack.Text = "Volver";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
-            // btnMod
-            // 
-            this.btnMod.Location = new System.Drawing.Point(89, 135);
-            this.btnMod.Name = "btnMod";
-            this.btnMod.Size = new System.Drawing.Size(75, 23);
-            this.btnMod.TabIndex = 6;
-            this.btnMod.Text = "Modificar";
-            this.btnMod.UseVisualStyleBackColor = true;
-            this.btnMod.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnDel
             // 
             this.btnDel.Location = new System.Drawing.Point(171, 135);
@@ -139,7 +128,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(258, 194);
             this.Controls.Add(this.btnDel);
-            this.Controls.Add(this.btnMod);
             this.Controls.Add(this.lstPlans);
             this.Controls.Add(this.btnPlanList);
             this.Controls.Add(this.lblPlanName);
@@ -170,7 +158,6 @@
         private System.Windows.Forms.ListBox lstPlans;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnBack;
-        private System.Windows.Forms.Button btnMod;
         private System.Windows.Forms.Button btnDel;
     }
 }
