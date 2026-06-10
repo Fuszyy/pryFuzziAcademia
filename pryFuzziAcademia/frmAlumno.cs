@@ -17,6 +17,8 @@ namespace pryFuzziAcademia
             InitializeComponent();
         }
 
+        public string[,] arrAlumnos = new string[5, 8];
+
         public string[] arrPlanes = new string[5];
         public string[,] arrMaterias = new string[5, 4];
 
@@ -42,11 +44,23 @@ namespace pryFuzziAcademia
                 txtAddress.Text = string.Empty;
                 txtContact.Text = string.Empty;
 
+                for (int i = 0; i < arrAlumnos.GetLength(0); i++)
+                {
+                    arrAlumnos[i, 0] = txtDNI.Text;
+                    arrAlumnos[i, 1] = txtName.Text;
+                    arrAlumnos[i, 2] = txtLastName.Text;
+                    arrAlumnos[i, 3] = txtAddress.Text;
+                    arrAlumnos[i, 4] = txtContact.Text;
+                    arrAlumnos[i, 5] = dtpBirthDate.Text;
+
+                }
                 txtName.Enabled = false;
                 txtLastName.Enabled = false;
                 txtAddress.Enabled = false;
                 txtContact.Enabled = false;
                 dtpBirthDate.Enabled = false;
+
+
             }
             else
             {

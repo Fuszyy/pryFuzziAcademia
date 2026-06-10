@@ -51,7 +51,7 @@ namespace pryFuzziAcademia
             }
             if (rbtAllSearch.Checked == false && searchCount == 0)
             {
-                DialogResult result = MessageBox.Show("Materia no encontrada.", "Búsqueda de materias", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("Materia no encontrada.", "Búsqueda de materias", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

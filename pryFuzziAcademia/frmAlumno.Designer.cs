@@ -82,7 +82,7 @@
             // txtName
             // 
             this.txtName.Enabled = false;
-            this.txtName.Location = new System.Drawing.Point(61, 58);
+            this.txtName.Location = new System.Drawing.Point(61, 62);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(101, 20);
             this.txtName.TabIndex = 1;
@@ -91,7 +91,7 @@
             // txtAddress
             // 
             this.txtAddress.Enabled = false;
-            this.txtAddress.Location = new System.Drawing.Point(279, 24);
+            this.txtAddress.Location = new System.Drawing.Point(279, 29);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(101, 20);
             this.txtAddress.TabIndex = 3;
@@ -100,7 +100,7 @@
             // txtLastName
             // 
             this.txtLastName.Enabled = false;
-            this.txtLastName.Location = new System.Drawing.Point(61, 94);
+            this.txtLastName.Location = new System.Drawing.Point(61, 95);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(101, 20);
             this.txtLastName.TabIndex = 2;
@@ -109,7 +109,7 @@
             // lblDNI
             // 
             this.lblDNI.AutoSize = true;
-            this.lblDNI.Location = new System.Drawing.Point(29, 27);
+            this.lblDNI.Location = new System.Drawing.Point(29, 32);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(26, 13);
             this.lblDNI.TabIndex = 13;
@@ -118,7 +118,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(11, 61);
+            this.lblName.Location = new System.Drawing.Point(11, 65);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(44, 13);
             this.lblName.TabIndex = 14;
@@ -127,7 +127,7 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(11, 97);
+            this.lblLastName.Location = new System.Drawing.Point(11, 98);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(44, 13);
             this.lblLastName.TabIndex = 15;
@@ -136,7 +136,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(222, 27);
+            this.lblAddress.Location = new System.Drawing.Point(222, 32);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(52, 13);
             this.lblAddress.TabIndex = 10;
@@ -145,7 +145,7 @@
             // lblContact
             // 
             this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(224, 61);
+            this.lblContact.Location = new System.Drawing.Point(224, 65);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(50, 13);
             this.lblContact.TabIndex = 11;
@@ -154,7 +154,7 @@
             // lblBirthDate
             // 
             this.lblBirthDate.AutoSize = true;
-            this.lblBirthDate.Location = new System.Drawing.Point(166, 97);
+            this.lblBirthDate.Location = new System.Drawing.Point(166, 98);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(108, 13);
             this.lblBirthDate.TabIndex = 12;
@@ -162,7 +162,7 @@
             // 
             // txtDNI
             // 
-            this.txtDNI.Location = new System.Drawing.Point(61, 24);
+            this.txtDNI.Location = new System.Drawing.Point(61, 29);
             this.txtDNI.Mask = "99999999";
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(53, 20);
@@ -173,7 +173,7 @@
             // txtContact
             // 
             this.txtContact.Enabled = false;
-            this.txtContact.Location = new System.Drawing.Point(279, 58);
+            this.txtContact.Location = new System.Drawing.Point(279, 62);
             this.txtContact.Mask = "(999)000-0000";
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(76, 20);
@@ -202,7 +202,7 @@
             // 
             this.dtpBirthDate.Enabled = false;
             this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthDate.Location = new System.Drawing.Point(280, 94);
+            this.dtpBirthDate.Location = new System.Drawing.Point(280, 95);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(100, 20);
             this.dtpBirthDate.TabIndex = 5;
